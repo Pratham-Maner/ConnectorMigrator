@@ -1,0 +1,1947 @@
+{
+    "Metadata": {
+        "AssetName": "AWS",
+        "Assetlogo": "",
+        "AssetCategory": "Business Application",
+        "AssetType": "Web",
+        "AssetVersion": "CI_10.11.005",
+        "AssetURL": "https://infoarcon.signin.aws.amazon.com/console",
+        "AssetServiceType": "",
+        "EntityNames": [
+            "Groups",
+            "Policies"
+        ]
+    },
+    "SSOInfo": {
+        "SupportedSSOMethod": {
+            "ArconBOT": {
+                "APPWebBrowser": {
+                    "Steps": {
+                        "URL": "https://infoarcon.signin.aws.amazon.com/console",
+                        "LaunchType": "chrome(RPA)",
+                        "PageLoadWait": 1000,
+                        "SeleniumData": [
+                            {
+                                "step": 1,
+                                "text": "",
+                                "type": "INPUT",
+                                "event": "type",
+                                "value": "<username>",
+                                "xpath": "html/body/div/div/main/div[2]/div/div/div/div/form/div/div/div/div/div/div/div[2]/div/div/div[2]/div/div[2]/div/div/div/div/div/input",
+                                "notify": "false",
+                                "runfor": "Element Data",
+                                "stepID": "1773054168281",
+                                "frameid": "",
+                                "imgdata": "",
+                                "waittime": "1",
+                                "bind_data": "UserName",
+                                "data_bind": "none",
+                                "framename": "",
+                                "stepEvent": [],
+                                "attributes": {
+                                    "id": "username",
+                                    "name": "username",
+                                    "type": "text",
+                                    "class": "awsui_input_2rhyz_6kb1z_149",
+                                    "style": "border: 2px solid red;",
+                                    "value": "",
+                                    "spellcheck": "false",
+                                    "autocomplete": "on",
+                                    "aria-labelledby": "username-label",
+                                    "data-original-border": ""
+                                },
+                                "framexpath": "",
+                                "isAutomated": true,
+                                "projectMode": "edit",
+                                "maximumretry": 1,
+                                "identifiertype": "Selenium",
+                                "search_element": {
+                                    "search_waittime": 1,
+                                    "max_search_count": 5
+                                },
+                                "attributeActions": [],
+                                "unique_attribute": [
+                                    "aria-labelledby",
+                                    "name",
+                                    "id",
+                                    "style"
+                                ],
+                                "disableElementClick": false,
+                                "attributeSearchScore": ".5"
+                            },
+                            {
+                                "step": 2,
+                                "text": "",
+                                "type": "INPUT",
+                                "event": "type",
+                                "value": "<xwd>",
+                                "xpath": "html/body/div/div/main/div[2]/div/div/div/div/form/div/div/div/div/div/div/div[2]/div/div/div[3]/div/div[2]/div/div/div/div/div/input",
+                                "notify": "false",
+                                "runfor": "Element Data",
+                                "stepID": "1773054168458",
+                                "frameid": "",
+                                "imgdata": "",
+                                "show_xwd": true,
+                                "waittime": 0,
+                                "bind_data": "Password",
+                                "data_bind": "none",
+                                "framename": "",
+                                "stepEvent": [],
+                                "attributes": {
+                                    "id": "password",
+                                    "name": "password",
+                                    "type": "password",
+                                    "class": "awsui_input_2rhyz_6kb1z_149",
+                                    "style": "border: 2px solid red;",
+                                    "value": "",
+                                    "spellcheck": "false",
+                                    "autocomplete": "on",
+                                    "aria-labelledby": "password-label",
+                                    "data-original-border": ""
+                                },
+                                "framexpath": "",
+                                "isAutomated": true,
+                                "projectMode": "edit",
+                                "pwd_visible": true,
+                                "maximumretry": 1,
+                                "identifiertype": "Selenium",
+                                "search_element": {
+                                    "search_waittime": 1,
+                                    "max_search_count": 5
+                                },
+                                "attributeActions": [],
+                                "unique_attribute": [
+                                    "aria-labelledby",
+                                    "name",
+                                    "id",
+                                    "type",
+                                    "style"
+                                ],
+                                "disableElementClick": false,
+                                "attributeSearchScore": ".5"
+                            },
+                            {
+                                "step": 3,
+                                "text": "Sign in",
+                                "type": "BUTTON",
+                                "event": "click",
+                                "value": "",
+                                "xpath": "html/body/div/div/main/div[2]/div/div/div/div/form/div/div/div/div/div/div/div[2]/div/div/div[4]/button",
+                                "notify": "false",
+                                "runfor": "Element Data",
+                                "stepID": "1773054167659",
+                                "frameid": "",
+                                "imgdata": "",
+                                "waittime": 0,
+                                "data_bind": "none",
+                                "framename": "",
+                                "stepEvent": [],
+                                "attributes": {
+                                    "id": "signin_button",
+                                    "type": "submit",
+                                    "class": "awsui_button_vjswe_lssc8_157 awsui_variant-primary_vjswe_lssc8_230 awsui_full-width_vjswe_lssc8_563",
+                                    "style": "border: 2px solid red;",
+                                    "data-testid": "sign-in",
+                                    "data-original-border": "",
+                                    "data-analytics-funnel-value": "button:r1r:",
+                                    "data-analytics-performance-mark": "9-1773054148772-9447"
+                                },
+                                "framexpath": "",
+                                "isAutomated": true,
+                                "projectMode": "edit",
+                                "maximumretry": 1,
+                                "identifiertype": "Selenium",
+                                "search_element": {
+                                    "search_waittime": 1,
+                                    "max_search_count": 5
+                                },
+                                "attributeActions": [],
+                                "unique_attribute": [
+                                    "id",
+                                    "data-testid",
+                                    "class",
+                                    "data-analytics-funnel-value",
+                                    "data-analytics-performance-mark",
+                                    "style"
+                                ],
+                                "disableElementClick": false,
+                                "attributeSearchScore": ".5"
+                            }
+                        ],
+                        "extension_version": "1.0.0.1",
+                        "restriction_config": {
+                            "clear_cookies": false,
+                            "disable_element": [],
+                            "disable_devtools": false,
+                            "disable_dropdown": [],
+                            "restrict_domains": [],
+                            "observe_input_box": [],
+                            "whitelist_domains": [],
+                            "disable_password_manager": false
+                        }
+                    }
+                }
+            },
+            "SAML": {},
+            "OIDC": {},
+            "OAuth": {},
+            "CLI": {
+                "APPWebBrowser": {
+                    "Steps": {
+                        "URL": "https://infoarcon.signin.aws.amazon.com/console",
+                        "Driver": "chrome",
+                        "LaunchType": "",
+                        "WaitTime": 10,
+                        "JSWaitTime": 1000,
+                        "PageLoadWait": 2000,
+                        "ElementSearchCount": 500,
+                        "ThreadWait": 1000,
+                        "ProcessName": "chrome.exe",
+                        "SeleniumData": [
+                            {
+                                "IdentifierType": "selenium",
+                                "ExeName": "script.exe",
+                                "Image_Score": "0.5",
+                                "IdentifierValue": "",
+                                "IsModifier": true,
+                                "Comp_Type": "algo1",
+                                "ImgText": "password",
+                                "ParentImageData": "",
+                                "Type": "Sendfocus",
+                                "Id": "password",
+                                "Name": "password",
+                                "Value": "",
+                                "ClassName": "",
+                                "Event": ""
+                            },
+                            {
+                                "IdentifierType": "selenium",
+                                "ExeName": "script.exe",
+                                "Image_Score": "0.5",
+                                "IdentifierValue": "",
+                                "IsModifier": true,
+                                "Comp_Type": "algo1",
+                                "ImgText": "username",
+                                "ParentImageData": "",
+                                "Type": "Sendfocus",
+                                "Id": "username",
+                                "Name": "username",
+                                "Value": "",
+                                "ClassName": "",
+                                "Event": ""
+                            },
+                            {
+                                "IdentifierType": "sendkey",
+                                "ExeName": "script.exe",
+                                "Image_Score": "0.5",
+                                "IdentifierValue": "",
+                                "IsModifier": true,
+                                "Comp_Type": "algo1",
+                                "ImgText": "",
+                                "ParentImageData": "",
+                                "Type": "ENTER",
+                                "Id": "",
+                                "Name": "",
+                                "Value": "",
+                                "ClassName": "",
+                                "Event": ""
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "LCMInfo": {
+        "SupportedLCMMethod": {
+            "ArconBOT": {},
+            "API": {},
+            "SDK": {
+                "AWAMetaData": {},
+                "ProvisioningInfo": {
+                    "ProvisioningData": [
+                        {
+                            "Action_type": "create_user",
+                            "App_Name": "AWS",
+                            "Credentials": {
+                                "AWSAccessKeyID": "[[accesskeyid]]",
+                                "AWSSecretAccessKey": "[[secretaccesskey]]"
+                            },
+                            "Application": "AWSUsers",
+                            "steps": [
+                                {
+                                    "Step_Count": "1",
+                                    "Action": "CreateUser",
+                                    "Description": "Create user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "create_user",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "Password": "[password]",
+                                        "reset_password": "[[ResetPassword]]"
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                },
+                                {
+                                    "Step_Count": "2",
+                                    "Action": "ApplyGroupsAsEntitlement",
+                                    "Description": "Apply groups as entitlements to user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "apply_groups",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Headers": {},
+                                    "Decision": "[[Groups_takeDecisionCreate]]",
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "Groups": [
+                                            "Groups_Entitlements"
+                                        ]
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                },
+                                {
+                                    "Step_Count": "3",
+                                    "Action": "ApplyPolicies",
+                                    "Description": "Apply policies as entitlements to user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "apply_policy",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Headers": {},
+                                    "Decision": "[[Policies_takeDecisionCreate]]",
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "PolicyARN": [
+                                            "Policies_Entitlements"
+                                        ]
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "FormBuilderData": [
+                        {
+                            "StepNo": "",
+                            "Type": "RadioButton",
+                            "Value": "https://testiamapi.2p.com.sa/api/Authuntication/GetToken",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Action to be taken on DI when user`s access is removed.",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "Leaver",
+                            "APIValueString": "[[Leaver]]",
+                            "OptionList": "Disable::Delete",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": "https://testiamapi.2p.com.sa/api/Authuntication/GetToken"
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "RadioButton",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Reactivation",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "isReEnabled",
+                            "APIValueString": "[[isReEnabled]]",
+                            "OptionList": "Yes::No",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Access Key ID",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "accesskeyid",
+                            "APIValueString": "[[accesskeyid]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Secret Access Key",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "secretaccesskey",
+                            "APIValueString": "[[secretaccesskey]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "UserName",
+                            "AttributeType": "ApplicationAttribute",
+                            "KeyName": "UserName",
+                            "APIValueString": "[[UserName]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Reset Password",
+                            "AttributeType": "ApplicationAttribute",
+                            "KeyName": "ResetPassword",
+                            "APIValueString": "[[ResetPassword]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        }
+                    ]
+                },
+                "ModificationUserInfo": {},
+                "ModificationEntitlementInfo": {
+                    "ModificationEntitlementData": [
+                        {
+                            "Action_type": "modify_entitlement",
+                            "App_Name": "AWS",
+                            "Credentials": {
+                                "AWSAccessKeyID": "[[accesskeyid]]",
+                                "AWSSecretAccessKey": "[[secretaccesskey]]"
+                            },
+                            "Application": "AWSUsers",
+                            "steps": [
+                                {
+                                    "Step_Count": "1",
+                                    "Action": "ApplyGroupsAsEntitlement",
+                                    "Description": "Apply groups as entitlements to user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "ApplyGroups",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Decision": "[[Groups_takeDecisionCreate]]",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "Groups": [
+                                            "Groups_CreateEntitlement"
+                                        ]
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                },
+                                {
+                                    "Step_Count": "2",
+                                    "Action": "RemoveGroupsAsEntitlement",
+                                    "Description": "Remove groups as entitlements from user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "detach_Groups",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Decision": "[[Groups_takeDecisionDelete]]",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "Groups": [
+                                            "Groups_DeleteEntitlement"
+                                        ]
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                },
+                                {
+                                    "Step_Count": "3",
+                                    "Action": "ApplyPolicies",
+                                    "Description": "Apply policies as entitlements to user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "ApplyPolicies",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Decision": "[[Policies_takeDecisionCreate]]",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "PolicyARN": [
+                                            "Policies_CreateEntitlement"
+                                        ]
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                },
+                                {
+                                    "Step_Count": "4",
+                                    "Action": "DetachUserPolicies",
+                                    "Description": "Remove policies as entitlements from user in AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "detach_Policies",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Decision": "[[Policies_takeDecisionDelete]]",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "UserName": "[username]",
+                                        "PolicyARN": [
+                                            "Policies_DeleteEntitlement"
+                                        ]
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "ModificationEntitlementFormBuilderData": [
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Access Key ID",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "accesskeyid",
+                            "APIValueString": "[[accesskeyid]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Secret Access Key",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "secretaccesskey",
+                            "APIValueString": "[[secretaccesskey]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        }
+                    ]
+                },
+                "DeprovisioningInfo": {
+                    "DeProvisioningData": [
+                        {
+                            "Action_type": "delete_user",
+                            "App_Name": "AWS",
+                            "Credentials": {
+                                "AWSAccessKeyID": "[[accesskeyid]]",
+                                "AWSSecretAccessKey": "[[secretaccesskey]]"
+                            },
+                            "Application": "AWSUsers",
+                            "steps": [
+                                {
+                                    "Step_Count": "1",
+                                    "Action": "DeleteUser",
+                                    "Description": "Delete user from AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "delete_user",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "UserName": "[username]"
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "id",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                }
+                            ]
+                        }
+                    ],
+                    "DeProvisioningFormBuilderData": [
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Access Key ID",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "accesskeyid",
+                            "APIValueString": "[[accesskeyid]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "TextBox",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "Secret Access Key",
+                            "AttributeType": "ApplicationConfiguration",
+                            "KeyName": "secretaccesskey",
+                            "APIValueString": "[[secretaccesskey]]",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        }
+                    ]
+                },
+                "DisableInfo": {
+                    "DisableData": [],
+                    "DisableFormBuilderData": []
+                },
+                "ReActivationInfo": {
+                    "ReactivationData": [],
+                    "ReactivationFormBuilderData": []
+                }
+            },
+            "SCIM": {},
+            "ODBC": {},
+            "CLI": {
+                "WindowRDP": {},
+                "SSH": {},
+                "ThickClient": {}
+            }
+        }
+    },
+    "UAGInfo": {
+        "SupportedReconMethod": {
+            "ArconBOT": {},
+            "SDK": {
+                "ReconData": [
+                    {
+                        "Action_type": "Partial Recon",
+                        "App_Name": "AWS",
+                        "Credentials": {
+                            "AWSAccessKeyID": "[[accesskeyid]]",
+                            "AWSSecretAccessKey": "[[secretaccesskey]]"
+                        },
+                        "BotStatus": {
+                            "URL": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetLogStatusUpdate",
+                            "RequestBody": {
+                                "ProcessID": "[[Processid]]",
+                                "Status": "{{Status}}",
+                                "Message": "{{BotMessage}}",
+                                "type": 0
+                            },
+                            "Tokenurl": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+                            "defaultux": "[[WorkSpaceUsername]]",
+                            "defaultuxd": "[[WorkSpacePassword]]"
+                        },
+                        "Method": "SDK",
+                        "Application": "AWSUsers",
+                        "steps": [
+                            {
+                                "Step_Count": "1",
+                                "Action": "GetAllGroups",
+                                "Description": "Fetch all groups from AWS",
+                                "IsFinalStep": false,
+                                "OutputVarName": "get_all_groups",
+                                "EndPoint": "",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "",
+                                "OutputDType": "",
+                                "Headers": {},
+                                "RequestBody": {},
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "id",
+                                "LoopOn": "data",
+                                "InputRequired": ""
+                            },
+                            {
+                                "Step_Count": "2",
+                                "Action": "Loop",
+                                "LoopAction": "Mapping",
+                                "Description": "Map groups to user in AWS",
+                                "IsFinalStep": false,
+                                "OutputLinksTo": [],
+                                "OutputVarName": "ReconGroups",
+                                "EndPoint": "",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "",
+                                "OutputDType": "list",
+                                "Headers": {},
+                                "RequestBody": {
+                                    "GroupName": "EntitlementName"
+                                },
+                                "LoopRequired": false,
+                                "InputDType": "",
+                                "SaveFromEachLoop": "",
+                                "LoopOn": "get_all_groups",
+                                "Keys": [
+                                    "GroupName"
+                                ]
+                            },
+                            {
+                                "Step_Count": "1",
+                                "Action": "GetAllPolicies",
+                                "Description": "Fetch all policies from AWS",
+                                "IsFinalStep": false,
+                                "OutputVarName": "get_all_policies",
+                                "EndPoint": "",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "",
+                                "OutputDType": "",
+                                "Headers": {},
+                                "RequestBody": {},
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "id",
+                                "LoopOn": "data",
+                                "InputRequired": ""
+                            },
+                            {
+                                "Step_Count": "2",
+                                "Action": "Loop",
+                                "Description": "Map policies to user in AWS in loop",
+                                "LoopAction": "Mapping",
+                                "IsFinalStep": false,
+                                "OutputLinksTo": [],
+                                "OutputVarName": "ReconPolicies",
+                                "EndPoint": "",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "",
+                                "OutputDType": "list",
+                                "Headers": {},
+                                "RequestBody": {
+                                    "PolicyName": "EntitlementName",
+                                    "Description": "EntitlementDescription"
+                                },
+                                "LoopRequired": false,
+                                "InputDType": "",
+                                "SaveFromEachLoop": "",
+                                "LoopOn": "get_all_policies",
+                                "Keys": [
+                                    "PolicyName",
+                                    "Description"
+                                ]
+                            },
+                            {
+                                "Step_Count": "3",
+                                "Action": "APICall",
+                                "Description": "Generate access token for WebSM API call",
+                                "IsFinalStep": false,
+                                "OutputLinksTo": [
+                                    3
+                                ],
+                                "UseTokenURL": false,
+                                "OutputVarName": "WebSMaccessToken",
+                                "EndPoint": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+                                "ExtractVariable": "accessToken",
+                                "Parameters": "",
+                                "APIMethod": "POST",
+                                "OutputDType": "list",
+                                "Headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "RequestBody": {
+                                    "username": "[[WorkSpaceUsername]]",
+                                    "userARCXWD": "[[WorkSpacePassword]]"
+                                },
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "",
+                                "LoopOn": "",
+                                "InputRequired": ""
+                            },
+                            {
+                                "Step_Count": "4",
+                                "Action": "APICall",
+                                "Description": "Send groups as entitlements to WebSM",
+                                "IsFinalStep": false,
+                                "OutputLinksTo": [
+                                    3
+                                ],
+                                "UseTokenURL": false,
+                                "OutputVarName": "WebSMResponse",
+                                "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetEntitlements",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "POST",
+                                "OutputDType": "",
+                                "Headers": {
+                                    "Authorization": "Bearer {{WebSMaccessToken}}"
+                                },
+                                "RequestBody": {
+                                    "Assetid": "[[assetid]]",
+                                    "Entitlement": "{{ReconGroups}}",
+                                    "ProcessId": "[[Processid]]",
+                                    "EntityName": "Groups"
+                                },
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "",
+                                "LoopOn": "data",
+                                "InputRequired": ""
+                            },
+                            {
+                                "Step_Count": "4",
+                                "Action": "APICall",
+                                "Description": "Send policies as entitlements to WebSM",
+                                "IsFinalStep": false,
+                                "OutputLinksTo": [
+                                    3
+                                ],
+                                "UseTokenURL": false,
+                                "OutputVarName": "WebSMResponse",
+                                "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetEntitlements",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "POST",
+                                "OutputDType": "",
+                                "Headers": {
+                                    "Authorization": "Bearer {{WebSMaccessToken}}"
+                                },
+                                "RequestBody": {
+                                    "Assetid": "[[assetid]]",
+                                    "Entitlement": "{{ReconPolicies}}",
+                                    "ProcessId": "[[Processid]]",
+                                    "EntityName": "Policies"
+                                },
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "",
+                                "LoopOn": "data",
+                                "InputRequired": ""
+                            }
+                        ]
+                    },
+                    {
+                        "Action_type": "Full Recon",
+                        "App_Name": "AWS",
+                        "Credentials": {
+                            "AWSAccessKeyID": "[[accesskeyid]]",
+                            "AWSSecretAccessKey": "[[secretaccesskey]]"
+                        },
+                        "BotStatus": {
+                            "URL": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetLogStatusUpdate",
+                            "RequestBody": {
+                                "ProcessID": "[[Processid]]",
+                                "Status": "{{Status}}",
+                                "Message": "{{BotMessage}}",
+                                "type": 1
+                            },
+                            "Tokenurl": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+                            "defaultux": "[[WorkSpaceUsername]]",
+                            "defaultuxd": "[[WorkSpacePassword]]"
+                        },
+                        "Method": "SDK",
+                        "Application": "AWSUsers",
+                        "steps": [
+                            {
+                                "Step_Count": "1",
+                                "Action": "GetAllUsers",
+                                "Description": "Fetch all users from AWS",
+                                "IsFinalStep": false,
+                                "OutputVarName": "get_all_users",
+                                "EndPoint": "",
+                                "ExtractVariable": "",
+                                "Parameters": "",
+                                "APIMethod": "",
+                                "OutputDType": "",
+                                "Headers": {},
+                                "RequestBody": {},
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "id",
+                                "LoopOn": "data",
+                                "InputRequired": ""
+                            },
+                            {
+                                "Step_Count": "2",
+                                "Action": "APICall",
+                                "Description": "Generate access token for WebSM API call",
+                                "IsFinalStep": false,
+                                "OutputLinksTo": [
+                                    3
+                                ],
+                                "UseTokenURL": false,
+                                "OutputVarName": "WebSMaccessToken",
+                                "EndPoint": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+                                "ExtractVariable": "accessToken",
+                                "Parameters": "",
+                                "APIMethod": "POST",
+                                "OutputDType": "list",
+                                "Headers": {
+                                    "Content-Type": "application/json"
+                                },
+                                "RequestBody": {
+                                    "username": "[[WorkSpaceUsername]]",
+                                    "userARCXWD": "[[WorkSpacePassword]]"
+                                },
+                                "LoopRequired": "False",
+                                "InputDType": "json",
+                                "SaveFromEachLoop": "",
+                                "LoopOn": "",
+                                "InputRequired": ""
+                            },
+                            {
+                                "Step_Count": "3",
+                                "Action": "LoopOnStep",
+                                "Description": "Loop on each user to fetch details and send to WebSM",
+                                "InputRequired": "",
+                                "LoopOn": "get_all_users",
+                                "OutputVarName": "user_details",
+                                "GotoStep": "",
+                                "LoopStep": [
+                                    {
+                                        "Step_Count": "1",
+                                        "Action": "Extract",
+                                        "Description": "Extract user details",
+                                        "SubAction": "",
+                                        "InputRequired": [
+                                            "user_details"
+                                        ],
+                                        "SourceEntity": "",
+                                        "OutputVarName": "",
+                                        "Keys": [
+                                            "UserName",
+                                            "UserId",
+                                            "PasswordLastUsed"
+                                        ]
+                                    },
+                                    {
+                                        "Step_Count": "2",
+                                        "Action": "APICall",
+                                        "Description": "Create log entry in WebSM for each user",
+                                        "IsFinalStep": false,
+                                        "OutputLinksTo": [
+                                            3
+                                        ],
+                                        "UseTokenURL": false,
+                                        "OutputVarName": "Rowid",
+                                        "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconDILogEntry",
+                                        "ExtractVariable": "Result",
+                                        "Parameters": "",
+                                        "APIMethod": "POST",
+                                        "OutputDType": "",
+                                        "Headers": {
+                                            "Authorization": "Bearer {{WebSMaccessToken}}"
+                                        },
+                                        "RequestBody": {
+                                            "ProcessID": "[[Processid]]",
+                                            "UserName": "{{UserName}}",
+                                            "UserJson": "",
+                                            "Status": "",
+                                            "StatusMessage": ""
+                                        },
+                                        "LoopRequired": "False",
+                                        "InputDType": "json",
+                                        "SaveFromEachLoop": "",
+                                        "LoopOn": "data",
+                                        "InputRequired": ""
+                                    },
+                                    {
+                                        "Step_Count": "3",
+                                        "Action": "GetUserGroups",
+                                        "Description": "Fetch groups of the user from AWS",
+                                        "IsFinalStep": false,
+                                        "OutputVarName": "Groups",
+                                        "EndPoint": "",
+                                        "ExtractVariable": "",
+                                        "Parameters": "",
+                                        "APIMethod": "",
+                                        "OutputDType": "",
+                                        "Headers": {},
+                                        "RequestBody": {
+                                            "UserName": "{{UserName}}"
+                                        },
+                                        "LoopRequired": "False",
+                                        "InputDType": "json",
+                                        "SaveFromEachLoop": "id",
+                                        "LoopOn": "data",
+                                        "InputRequired": ""
+                                    },
+                                    {
+                                        "Step_Count": "3",
+                                        "Action": "GetUserPolicies",
+                                        "Description": "Fetch policies of the user from AWS",
+                                        "IsFinalStep": false,
+                                        "OutputVarName": "Policies",
+                                        "EndPoint": "",
+                                        "ExtractVariable": "",
+                                        "Parameters": "",
+                                        "APIMethod": "",
+                                        "OutputDType": "",
+                                        "Headers": {},
+                                        "RequestBody": {
+                                            "UserName": "{{UserName}}"
+                                        },
+                                        "LoopRequired": "False",
+                                        "InputDType": "json",
+                                        "SaveFromEachLoop": "id",
+                                        "LoopOn": "data",
+                                        "InputRequired": ""
+                                    },
+                                    {
+                                        "Step_Count": "3",
+                                        "Action": "Loop",
+                                        "Description": "Loop on policies to map them as entitlements",
+                                        "LoopAction": "ReturnList",
+                                        "IsFinalStep": false,
+                                        "OutputLinksTo": [],
+                                        "OutputVarName": "PoliciesList",
+                                        "EndPoint": "",
+                                        "ExtractVariable": "",
+                                        "Parameters": "",
+                                        "APIMethod": "",
+                                        "OutputDType": "list",
+                                        "Headers": {},
+                                        "RequestBody": {},
+                                        "LoopRequired": false,
+                                        "InputDType": "",
+                                        "SaveFromEachLoop": "PolicyName",
+                                        "LoopOn": "Policies"
+                                    },
+                                    {
+                                        "Step_Count": "6",
+                                        "Action": "Merge",
+                                        "Description": "Merge groups and policies to map them as entitlements",
+                                        "IsFinalStep": false,
+                                        "OutputVarName": "EntitlemntsList",
+                                        "ExtractVariable": "",
+                                        "NeverLoginTime": "",
+                                        "InputRequired": [
+                                            "Groups",
+                                            "PoliciesList"
+                                        ]
+                                    },
+                                    {
+                                        "Step_Count": "4",
+                                        "Action": "DateTimeToUTC",
+                                        "Description": "Convert last login time to UTC format",
+                                        "IsFinalStep": false,
+                                        "OutputVarName": "DateTime",
+                                        "ExtractVariable": "PasswordLastUsed",
+                                        "TimeZone": "",
+                                        "TimeFormat": "yyyy-MM-ddTHH:mm:sszzz",
+                                        "NeverLoginTime": "0001-01-01T00:00:00",
+                                        "InputRequired": ""
+                                    },
+                                    {
+                                        "Step_Count": "5",
+                                        "SkipStepOnFailure": "1",
+                                        "Action": "APICall",
+                                        "Description": "Send user details along with entitlements to WebSM",
+                                        "IsFinalStep": false,
+                                        "OutputLinksTo": [
+                                            3
+                                        ],
+                                        "UseTokenURL": false,
+                                        "OutputVarName": "WebSMResponse",
+                                        "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconDI",
+                                        "ExtractVariable": "Result",
+                                        "Parameters": "",
+                                        "APIMethod": "POST",
+                                        "OutputDType": "",
+                                        "Headers": {
+                                            "Authorization": "Bearer {{WebSMaccessToken}}"
+                                        },
+                                        "RequestBody": {
+                                            "AssetId": "[[assetid]]",
+                                            "username": "{{UserName}}",
+                                            "LastAccessDateTime": "{{DateTime}}",
+                                            "password": "",
+                                            "SignUp": [
+                                                {
+                                                    "Keyname": "UserName",
+                                                    "Value": "{{UserName}}"
+                                                }
+                                            ],
+                                            "IdentityCategory": "[[IdentityCategory]]",
+                                            "IdentityType": "[[IdentityType]]",
+                                            "Entitlement": "{{EntitlemntsList}}"
+                                        },
+                                        "LoopRequired": "False",
+                                        "InputDType": "json",
+                                        "SaveFromEachLoop": "",
+                                        "LoopOn": "data",
+                                        "InputRequired": ""
+                                    },
+                                    {
+                                        "Step_Count": "6",
+                                        "Action": "Extract",
+                                        "Description": "Extract response from WebSM API call",
+                                        "SubAction": "",
+                                        "InputRequired": [
+                                            "WebSMResponse"
+                                        ],
+                                        "SourceEntity": "",
+                                        "OutputVarName": "",
+                                        "Keys": [
+                                            "ReturnValue",
+                                            "DiplayMessage"
+                                        ]
+                                    },
+                                    {
+                                        "Step_Count": "7",
+                                        "Action": "APICall",
+                                        "Description": "Update log entry in WebSM with the result of recon for each user",
+                                        "IsFinalStep": false,
+                                        "OutputLinksTo": [
+                                            3
+                                        ],
+                                        "UseTokenURL": false,
+                                        "OutputVarName": "UpdateLog",
+                                        "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconDILogEntry",
+                                        "ExtractVariable": "Result",
+                                        "Parameters": "",
+                                        "APIMethod": "POST",
+                                        "OutputDType": "",
+                                        "Headers": {
+                                            "Authorization": "Bearer {{WebSMaccessToken}}"
+                                        },
+                                        "RequestBody": {
+                                            "StatusMessage": "{{DiplayMessage}}",
+                                            "Status": "{{ReturnValue}}",
+                                            "RowId": "{{Rowid}}"
+                                        },
+                                        "LoopRequired": "False",
+                                        "InputDType": "json",
+                                        "SaveFromEachLoop": "",
+                                        "LoopOn": "data",
+                                        "InputRequired": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "ReconFormBuilderData": [
+                    {
+                        "StepNo": "",
+                        "Type": "TextBox",
+                        "Value": "",
+                        "Name": "",
+                        "Id": "",
+                        "ClassName": "",
+                        "XPath": "",
+                        "WaitTime": 1,
+                        "StepDescription": "Access Key ID",
+                        "AttributeType": "ApplicationConfiguration",
+                        "KeyName": "accesskeyid",
+                        "APIValueString": "[[accesskeyid]]",
+                        "OptionList": "",
+                        "ExtraOptions": {
+                            "Label": null,
+                            "Name": null,
+                            "Class": null,
+                            "Placeholder": null,
+                            "Required": false,
+                            "Type": "text",
+                            "MinLength": null,
+                            "MaxLength": null,
+                            "CustomRegex": "",
+                            "CustomError": "",
+                            "AllowMultiple": false,
+                            "CustomAttributes": {
+                                "input": ""
+                            }
+                        },
+                        "SelectedOptions": [],
+                        "StepIdentifier": ""
+                    },
+                    {
+                        "StepNo": "",
+                        "Type": "TextBox",
+                        "Value": "",
+                        "Name": "",
+                        "Id": "",
+                        "ClassName": "",
+                        "XPath": "",
+                        "WaitTime": 1,
+                        "StepDescription": "Secret Access Key",
+                        "AttributeType": "ApplicationConfiguration",
+                        "KeyName": "secretaccesskey",
+                        "APIValueString": "[[secretaccesskey]]",
+                        "OptionList": "",
+                        "ExtraOptions": {
+                            "Label": null,
+                            "Name": null,
+                            "Class": null,
+                            "Placeholder": null,
+                            "Required": false,
+                            "Type": "text",
+                            "MinLength": null,
+                            "MaxLength": null,
+                            "CustomRegex": "",
+                            "CustomError": "",
+                            "AllowMultiple": false,
+                            "CustomAttributes": {
+                                "input": ""
+                            }
+                        },
+                        "SelectedOptions": [],
+                        "StepIdentifier": ""
+                    }
+                ]
+            },
+            "SCIM": {},
+            "ODBC": {},
+            "CLI": {
+                "WindowRDP": {},
+                "SSH": {},
+                "ThickClient": {}
+            }
+        }
+    },
+    "VaultInfo": {
+        "SupportedVaultingMethod": {
+            "ArconBOT": {},
+            "API": {},
+            "SCIM": {},
+            "ODBC": {},
+            "CLI": {
+                "WindowRDP": {},
+                "SSH": {},
+                "ThickClient": {}
+            }
+        }
+    },
+    "SOT": {
+        "SupportedSOTMethod": {
+            "API": {},
+            "SDK": {
+                "SOTInfo": {
+                    "SOTData": [
+                        {
+                            "Action_type": "APIConnect",
+                            "App_Name": "AWS",
+                            "Credentials": {},
+                            "App_URL": "",
+                            "App_ID": "",
+                            "App_Secret": "",
+                            "Result_File_Name": "",
+                            "Result_API_URL": "",
+                            "steps": [
+                                {
+                                    "Step_Count": "1",
+                                    "Action": "APICall",
+                                    "Description": "Test connection to AWS", 
+                                    "IsFinalStep": false,
+                                    "OutputLinksTo": [
+                                        3
+                                    ],
+                                    "UseTokenURL": false,
+                                    "OutputVarName": "accessToken",
+                                    "EndPoint": "[[OnboardingAPIEndPoint]]/api/AWSConnection/CheckConnection",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "POST",
+                                    "OutputDType": "",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "AWSAccessKey": "[[AWSAccessKeyID]]",
+                                        "AWSSecretKey": "[[AWSSecretAccessKey]]"
+                                    },
+                                    "LoopRequired": "False",
+                                    "InputDType": "json",
+                                    "SaveFromEachLoop": "",
+                                    "LoopOn": "data",
+                                    "InputRequired": ""
+                                }
+                            ]
+                        },
+                        {
+                            "Action_type": "OnBoardingAws",
+                            "App_Name": "AWS",
+                            "Credentials": {
+                                "AWSAccessKeyID": "[[AWSAccessKeyID]]",
+                                "AWSSecretAccessKey": "[[AWSSecretAccessKey]]"
+                            },
+                            "Method": "SDK",
+                            "Application": "AWSUsers",
+                            "steps": [
+                                {
+                                    "Step_Count": "1",
+                                    "Action": "GetGroupUsers",
+                                    "Description": "Fetch list of users in a group from AWS",
+                                    "IsFinalStep": false,
+                                    "OutputVarName": "get_all_users",
+                                    "EndPoint": "",
+                                    "ExtractVariable": "",
+                                    "Parameters": "",
+                                    "APIMethod": "",
+                                    "OutputDType": "",
+                                    "Headers": {},
+                                    "RequestBody": {
+                                        "Groups": "[[groupName]]"
+                                    }
+                                },
+                                {
+                                    "Step_Count": "2",
+                                    "Action": "LoopOnStep",
+                                    "InputRequired": "",
+                                    "LoopOn": "get_all_users",
+                                    "OutputVarName": "user_details",
+                                    "GotoStep": "",
+                                    "LoopStep": [
+                                        {
+                                            "Step_Count": "1",
+                                            "Action": "Extract",
+                                            "Description": "Extract user details for onboarding",
+                                            "SubAction": "",
+                                            "InputRequired": [
+                                                "user_details"
+                                            ],
+                                            "SourceEntity": "",
+                                            "OutputVarName": "",
+                                            "Keys": [
+                                                "UserName",
+                                                "UserId",
+                                                "CreateDate",
+                                                "PasswordLastUsed",
+                                                "Path",
+                                                "Arn"
+                                            ]
+                                        },
+                                        {
+                                            "Step_Count": "2",
+                                            "Action": "GetUserPolicies",
+                                            "Description": "Fetch policies of the user from AWS",
+                                            "IsFinalStep": false,
+                                            "OutputVarName": "get_user_policies",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "",
+                                            "Parameters": "",
+                                            "APIMethod": "",
+                                            "OutputDType": "",
+                                            "Headers": {},
+                                            "RequestBody": {
+                                                "UserName": "{{UserName}}"
+                                            },
+                                            "InputRequired": ""
+                                        },
+                                        {
+                                            "Step_Count": "3",
+                                            "Action": "Loop",
+                                            "Description": "Loop on policies to map them as entitlements",
+                                            "LoopAction": "ReturnList",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [],
+                                            "OutputVarName": "Policy",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "Id",
+                                            "Parameters": "",
+                                            "APIMethod": "",
+                                            "OutputDType": "list",
+                                            "Headers": {},
+                                            "RequestBody": "",
+                                            "LoopRequired": false,
+                                            "InputDType": "",
+                                            "SaveFromEachLoop": "PolicyName",
+                                            "LoopOn": "get_user_policies",
+                                            "InputRequired": [
+                                                "get_user_policies"
+                                            ]
+                                        },
+                                        {
+                                            "Step_Count": "4",
+                                            "Action": "Convert",
+                                            "Description": "Convert list of policies to string",
+                                            "SubAction": "ListToString",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [],
+                                            "OutputVarName": "Policies",
+                                            "ConvertVarName": ",",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "Policy",
+                                            "InputRequired": [
+                                                "Policy"
+                                            ]
+                                        },
+                                        {
+                                            "Step_Count": "5",
+                                            "Action": "GetUserGroups",
+                                            "Description": "Fetch groups of the user from AWS",
+                                            "IsFinalStep": false,
+                                            "OutputVarName": "get_user_groups",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "",
+                                            "Parameters": "",
+                                            "APIMethod": "",
+                                            "OutputDType": "",
+                                            "Headers": {},
+                                            "RequestBody": {
+                                                "UserName": "{{UserName}}"
+                                            },
+                                            "InputRequired": ""
+                                        },
+                                        {
+                                            "Step_Count": "6",
+                                            "Action": "Convert",
+                                            "Description": "Convert list of groups to string",
+                                            "SubAction": "ListToString",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [],
+                                            "OutputVarName": "StringGropus",
+                                            "ConvertVarName": ",",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "get_user_groups",
+                                            "InputRequired": [
+                                                "get_user_groups"
+                                            ]
+                                        },
+                                        {
+                                            "Step_Count": "7",
+                                            "Action": "GetUserAccessKeys",
+                                            "Description": "Fetch access keys of the user from AWS",
+                                            "IsFinalStep": false,
+                                            "OutputVarName": "AccessKey",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "",
+                                            "Parameters": "",
+                                            "APIMethod": "",
+                                            "OutputDType": "",
+                                            "Headers": {},
+                                            "RequestBody": {
+                                                "UserName": "{{UserName}}"
+                                            },
+                                            "InputRequired": ""
+                                        },
+                                        {
+                                            "Step_Count": "8",
+                                            "Action": "Convert",
+                                            "Description": "Convert list of access keys to string",
+                                            "SubAction": "ListToString",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [],
+                                            "OutputVarName": "AccessKeys",
+                                            "ConvertVarName": ",",
+                                            "EndPoint": "",
+                                            "ExtractVariable": "AccessKey",
+                                            "InputRequired": [
+                                                "AccessKey"
+                                            ]
+                                        },
+                                        {
+                                            "Step_Count": "9",
+                                            "Action": "APICall",
+                                            "Description": "Create log entry in onboarding application for each user",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [
+                                                3
+                                            ],
+                                            "UseTokenURL": false,
+                                            "OutputVarName": "LogId",
+                                            "EndPoint": "[OnboardingAPIEndPoint]/api/SchedulerLog/UpdateSchedulerLog",
+                                            "ExtractVariable": "Id",
+                                            "Parameters": "",
+                                            "APIMethod": "POST",
+                                            "OutputDType": "",
+                                            "Headers": "",
+                                            "RequestBody": {
+                                                "ParentId": "[ParentId]",
+                                                "BotType": "[BotType]",
+                                                "OnboardingType": "[obdirectory]",
+                                                "UserId": "{{UserName}}"
+                                            },
+                                            "LoopRequired": "False",
+                                            "InputDType": "json",
+                                            "SaveFromEachLoop": "",
+                                            "LoopOn": "data",
+                                            "InputRequired": ""
+                                        },
+                                        {
+                                            "Step_Count": "10",
+                                            "SkipStepOnFailure": "1",
+                                            "Action": "APICall",
+                                            "Description": "Create onboarding request in WebSM for the user",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [
+                                                3
+                                            ],
+                                            "UseTokenURL": false,
+                                            "OutputVarName": "Data",
+                                            "EndPoint": "[OnboardingAPIEndPoint]/api/HrmsOb/HRMSScanForEngine",
+                                            "ExtractVariable": "",
+                                            "Parameters": "",
+                                            "APIMethod": "POST",
+                                            "OutputDType": "",
+                                            "Headers": {},
+                                            "RequestBody": {
+                                                "obtype": "user",
+                                                "obfrom": "engine",
+                                                "obdirectory": "[obdirectory]",
+                                                "configid": "[configId]",
+                                                "users": [
+                                                    {
+                                                        "UserName": "{{UserName}}",
+                                                        "UserId": "{{UserId}}",
+                                                        "CreateDate": "{{CreateDate}}",
+                                                        "PasswordLastUsed": "{{PasswordLastUsed}}",
+                                                        "Path": "{{Path}}",
+                                                        "Arn": "{{Arn}}",
+                                                        "Groups": "{{StringGropus}}",
+                                                        "Policy": "{{Policies}}",
+                                                        "AccessKeys": "{{AccessKeys}}"
+                                                    }
+                                                ]
+                                            },
+                                            "LoopRequired": "False",
+                                            "InputDType": "json",
+                                            "SaveFromEachLoop": "",
+                                            "LoopOn": "data",
+                                            "InputRequired": ""
+                                        },
+                                        {
+                                            "Step_Count": "11",
+                                            "Action": "Extract",
+                                            "Description": "Extract response from onboarding request API call to check if user was onboarded successfully",
+                                            "SubAction": "",
+                                            "InputRequired": [
+                                                "Data"
+                                            ],
+                                            "SourceEntity": "",
+                                            "OutputVarName": "",
+                                            "Keys": [
+                                                "Success",
+                                                "Result"
+                                            ]
+                                        },
+                                        {
+                                            "Step_Count": "12",
+                                            "Action": "APICall",
+                                            "Description": "If onboarding was successful, proceed with auto onboarding the user in the application. If not, skip to next user.",
+                                            "Decision": "[IsAutoOnboard]",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [
+                                                3
+                                            ],
+                                            "UseTokenURL": false,
+                                            "OutputVarName": "Success",
+                                            "EndPoint": "[OnboardingAPIEndPoint]/api/HrmsOb/UserOnboard",
+                                            "ExtractVariable": "Success",
+                                            "Parameters": "",
+                                            "APIMethod": "POST",
+                                            "OutputDType": "",
+                                            "Headers": {},
+                                            "RequestBody": {
+                                                "semiauto": "[semiauto]",
+                                                "obfrom": "[obdirectory]",
+                                                "userfilter": "{{Result}}",
+                                                "usertype": "0",
+                                                "loginname": "ARCOSADMIN",
+                                                "loginid": 35,
+                                                "configid": "[configId]"
+                                            },
+                                            "LoopRequired": "False",
+                                            "InputDType": "json",
+                                            "SaveFromEachLoop": "",
+                                            "LoopOn": "data",
+                                            "InputRequired": ""
+                                        },
+                                        {
+                                            "Step_Count": "13",
+                                            "Action": "APICall",
+                                            "Description": "update scheduler log after onboarding",
+                                            "IsFinalStep": false,
+                                            "OutputLinksTo": [
+                                                3
+                                            ],
+                                            "UseTokenURL": false,
+                                            "OutputVarName": "UpdateLog",
+                                            "EndPoint": "[OnboardingAPIEndPoint]/api/SchedulerLog/UpdateSchedulerLog",
+                                            "ExtractVariable": "Id",
+                                            "Parameters": "",
+                                            "APIMethod": "POST",
+                                            "OutputDType": "",
+                                            "Headers": "",
+                                            "RequestBody": {
+                                                "Id": "{{LogId}}",
+                                                "ParentId": "[ParentId]",
+                                                "IsSuccess": "{{Success}}"
+                                            },
+                                            "LoopRequired": "False",
+                                            "InputDType": "json",
+                                            "SaveFromEachLoop": "",
+                                            "LoopOn": "data",
+                                            "InputRequired": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "SOTDBMapping": {
+                        "ObDBFieldMapping": [
+                            {
+                                "DBField": "group",
+                                "SOTField": "Groups"
+                            },
+                            {
+                                "DBField": "empId",
+                                "SOTField": "UserId"
+                            },
+                            {
+                                "DBField": "emailId",
+                                "SOTField": "UserName"
+                            },
+                            {
+                                "DBField": "createdOn",
+                                "SOTField": "CreateDate"
+                            }
+                        ]
+                    },
+                    "SOTFormBuilderData": [
+                        {
+                            "StepNo": "",
+                            "Type": "Password",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "AWS AccessKey ID",
+                            "AttributeType": "Application",
+                            "KeyName": "AWSAccessKeyID",
+                            "APIValueString": "",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "Password",
+                            "Value": "",
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "AWS SecretAccess Key",
+                            "AttributeType": "Application",
+                            "KeyName": "AWSSecretAccessKey",
+                            "APIValueString": "",
+                            "OptionList": "",
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        },
+                        {
+                            "StepNo": "",
+                            "Type": "MultiSelectDropDown",
+                            "Value": [],
+                            "Name": "",
+                            "Id": "",
+                            "ClassName": "",
+                            "XPath": "",
+                            "WaitTime": 1,
+                            "StepDescription": "groupName",
+                            "AttributeType": "Application",
+                            "KeyName": "groupName",
+                            "APIValueString": "",
+                            "OptionList": [],
+                            "ExtraOptions": {
+                                "Label": null,
+                                "Name": null,
+                                "Class": null,
+                                "Placeholder": null,
+                                "Required": false,
+                                "Type": "text",
+                                "MinLength": null,
+                                "MaxLength": null,
+                                "CustomRegex": "",
+                                "CustomError": "",
+                                "AllowMultiple": false,
+                                "CustomAttributes": {
+                                    "input": ""
+                                }
+                            },
+                            "SelectedOptions": [],
+                            "StepIdentifier": ""
+                        }
+                    ]
+                }
+            },
+            "UI": {},
+            "LDAP": {},
+            "DB": {}
+        }
+    }
+}

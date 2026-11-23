@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2CE8F56A-F41B-4720-B749-5DAFAB3314BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectorMigrator.Core", "src\ConnectorMigrator.Core\ConnectorMigrator.Core.csproj", "{AE78E7FC-3AB9-4775-986B-4F1C24AE9FF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectorMigrator.Cli", "src\ConnectorMigrator.Cli\ConnectorMigrator.Cli.csproj", "{D3A1FC14-A82D-4D94-8051-67A6B532CBBA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C7ADD017-6598-4B60-A4E0-632928F7907F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectorMigrator.Tests", "tests\ConnectorMigrator.Tests\ConnectorMigrator.Tests.csproj", "{F4A254A7-7610-4EBD-92FD-0F4F943F5C2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectorMigrator.WinForms", "src\ConnectorMigrator.WinForms\ConnectorMigrator.WinForms.csproj", "{1FB6E6A7-10EA-419B-A391-B597F9800C99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE78E7FC-3AB9-4775-986B-4F1C24AE9FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE78E7FC-3AB9-4775-986B-4F1C24AE9FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE78E7FC-3AB9-4775-986B-4F1C24AE9FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE78E7FC-3AB9-4775-986B-4F1C24AE9FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A1FC14-A82D-4D94-8051-67A6B532CBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A1FC14-A82D-4D94-8051-67A6B532CBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A1FC14-A82D-4D94-8051-67A6B532CBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A1FC14-A82D-4D94-8051-67A6B532CBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4A254A7-7610-4EBD-92FD-0F4F943F5C2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4A254A7-7610-4EBD-92FD-0F4F943F5C2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4A254A7-7610-4EBD-92FD-0F4F943F5C2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4A254A7-7610-4EBD-92FD-0F4F943F5C2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FB6E6A7-10EA-419B-A391-B597F9800C99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB6E6A7-10EA-419B-A391-B597F9800C99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB6E6A7-10EA-419B-A391-B597F9800C99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB6E6A7-10EA-419B-A391-B597F9800C99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AE78E7FC-3AB9-4775-986B-4F1C24AE9FF9} = {2CE8F56A-F41B-4720-B749-5DAFAB3314BC}
+		{D3A1FC14-A82D-4D94-8051-67A6B532CBBA} = {2CE8F56A-F41B-4720-B749-5DAFAB3314BC}
+		{F4A254A7-7610-4EBD-92FD-0F4F943F5C2F} = {C7ADD017-6598-4B60-A4E0-632928F7907F}
+		{1FB6E6A7-10EA-419B-A391-B597F9800C99} = {2CE8F56A-F41B-4720-B749-5DAFAB3314BC}
+	EndGlobalSection
+EndGlobal

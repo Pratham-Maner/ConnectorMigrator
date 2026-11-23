@@ -1,0 +1,3303 @@
+{
+  "Metadata": {
+    "AssetName": "Microsoft O365",
+    "Assetlogo": "",
+    "AssetCategory": "Business Application",
+    "AssetType": "Web",
+    "AssetVersion": "CI_10.11.005",
+    "AssetURL": "https://portal.azure.com/",
+    "AssetServiceType": "",
+    "connectorId": "microsoft-o365",
+    "capabilities": [
+      "DISCOVERY",
+      "LIFECYCLE",
+      "SSO"
+    ],
+    "EntityNames": [
+      "Groups",
+      "Roles"
+    ]
+  },
+  "SSOInfo": {
+    "Metadata": {
+      "ApplicationUrl": "https://portal.azure.com/",
+      "SSOOptions": [
+        "RPA"
+      ]
+    },
+    "SupportedSSOMethod": {
+      "ArconBOT": {
+        "APPWebBrowser": {
+          "Steps": {
+            "URL": "https://portal.azure.com/",
+            "Driver": "chrome",
+            "LaunchType": "",
+            "WaitTime": 10,
+            "JSWaitTime": 3000,
+            "PageLoadWait": 5000,
+            "ElementSearchCount": 500,
+            "ThreadWait": 1000,
+            "ProcessName": "chrome",
+            "SeleniumData": [
+              {
+                "IdentifierType": "selenium",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "username",
+                "ParentImageData": "",
+                "Type": "Sendfocus",
+                "Id": "i0116",
+                "Name": "loginfmt",
+                "Value": "",
+                "ClassName": "",
+                "Event": ""
+              },
+              {
+                "IdentifierType": "selenium",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "Login",
+                "ParentImageData": "",
+                "Type": "Button",
+                "Id": "idSIButton9",
+                "Name": "",
+                "Value": "",
+                "ClassName": "win-button button_primary button ext-button primary ext-primary",
+                "Event": "click"
+              },
+              {
+                "IdentifierType": "selenium",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "password",
+                "ParentImageData": "",
+                "Type": "Sendfocus",
+                "Id": "i0118",
+                "Name": "passwd",
+                "Value": "",
+                "ClassName": "",
+                "Event": ""
+              },
+              {
+                "IdentifierType": "sendkey",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "",
+                "ParentImageData": "",
+                "Type": "ENTER",
+                "Id": "",
+                "Name": "",
+                "Value": "",
+                "ClassName": "",
+                "Event": ""
+              }
+            ]
+          }
+        }
+      },
+      "SAML": {},
+      "OIDC": {},
+      "OAuth": {},
+      "CLI": {
+        "APPWebBrowser": {
+          "Steps": {
+            "URL": "https://portal.azure.com/",
+            "Driver": "chrome",
+            "LaunchType": "",
+            "WaitTime": 10,
+            "JSWaitTime": 3000,
+            "PageLoadWait": 5000,
+            "ElementSearchCount": 500,
+            "ThreadWait": 1000,
+            "ProcessName": "chrome",
+            "SeleniumData": [
+              {
+                "IdentifierType": "selenium",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "username",
+                "ParentImageData": "",
+                "Type": "Sendfocus",
+                "Id": "i0116",
+                "Name": "loginfmt",
+                "Value": "",
+                "ClassName": "",
+                "Event": ""
+              },
+              {
+                "IdentifierType": "selenium",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "Login",
+                "ParentImageData": "",
+                "Type": "Button",
+                "Id": "idSIButton9",
+                "Name": "",
+                "Value": "",
+                "ClassName": "win-button button_primary button ext-button primary ext-primary",
+                "Event": "click"
+              },
+              {
+                "IdentifierType": "selenium",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "password",
+                "ParentImageData": "",
+                "Type": "Sendfocus",
+                "Id": "i0118",
+                "Name": "passwd",
+                "Value": "",
+                "ClassName": "",
+                "Event": ""
+              },
+              {
+                "IdentifierType": "sendkey",
+                "ExeName": "script.exe",
+                "Image_Score": "0.5",
+                "IdentifierValue": "",
+                "IsModifier": true,
+                "Comp_Type": "algo1",
+                "ImgText": "",
+                "ParentImageData": "",
+                "Type": "ENTER",
+                "Id": "",
+                "Name": "",
+                "Value": "",
+                "ClassName": "",
+                "Event": ""
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "LCMInfo": {
+    "Metadata": {
+      "MethodUsed": [
+        "API"
+      ],
+      "features": [
+        "CREATE",
+        "UPDATE",
+        "UPDATE_ENTITLEMENT",
+        "DISABLE",
+        "DELETE",
+        "REACTIVATE",
+        "REACTIVATE_WITH_UPDATE"
+      ]
+    },
+    "SupportedLCMMethod": {
+      "ArconBOT": {},
+      "API": {
+        "AWAMetaData": {},
+        "ProvisioningInfo": {
+          "ProvisioningData": [
+            {
+              "Action_type": "create_user",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "DIProvisionedStep": 2,
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Generate access token for O365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Create user in O365 and extract user id from the response",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "user_id",
+                  "EndPoint": "[[userapiendpoint]]",
+                  "ExtractVariable": "id",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}",
+                    "Content-Type": "application/json"
+                  },
+                  "RequestBody": {
+                    "accountEnabled": true,
+                    "displayName": "[[displayname]]",
+                    "mailNickname": "[[mailnickname]]",
+                    "givenname": "[[givenname]]",
+                    "surname": "[[surname]]",
+                    "jobTitle": "[[jobtitle]]",
+                    "department": "[[department]]",
+                    "mobilePhone": "[[mobilephone]]",
+                    "companyName": "[[companyname]]",
+                    "streetAddress": "[[streetaddress]]",
+                    "city": "[[city]]",
+                    "state": "[[state]]",
+                    "country": "[[country]]",
+                    "passwordProfile": {
+                      "forceChangePasswordNextSignIn": true,
+                      "forceChangePasswordNextSignInWithMfa": false,
+                      "password": "[password]"
+                    },
+                    "userPrincipalName": "[username]"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "4",
+                  "Action": "APICall",
+                  "Description": "Generate access token for WebSM API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "WebSMaccessToken",
+                  "EndPoint": "[[WorkSpaceEndPoint]]xauth/api/Token/GenerateJwtTokenApplication",
+                  "ExtractVariable": "accessToken",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "list",
+                  "Headers": {
+                    "Content-Type": "application/json"
+                  },
+                  "RequestBody": {
+                    "username": "[[WorkSpaceUsername]]",
+                    "userARCXWD": "[[WorkSpacePassword]]"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "5",
+                  "Action": "APICall",
+                  "Description": "Writeback userid and username",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "",
+                  "EndPoint": "[[websmendpoint]]smserviceapi/api/CIDigitalIdentity/CheckAttributeValueAgainstAssetHumanIdentities",
+                  "ExtractVariable": "",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer {{WebSMaccessToken}}"
+                  },
+                  "RequestBody": {
+                    "ServiceId": "[[ServiceId]]",
+                    "WriteBackData": [
+                      {
+                        "Key": "[[WriteBackData1]]",
+                        "Value": "[username]"
+                      },
+                      {
+                        "Key": "[[WriteBackData2]]",
+                        "Value": "{{user_id}}"
+                      }
+                    ],
+                    "WriteBackCount": "[[WriteBackDataCount]]"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each group to fetch details",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Groups_Entitlements"
+                  ],
+                  "Decision": "[[Groups_takeDecisionCreate]]",
+                  "OutputVarName": "Group",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract group details",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Group"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Add user to the group",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[groupendpoint]]/{{value}}/members/$ref",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "POST",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {
+                        "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{{user_id}}"
+                      },
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each role to fetch details",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Roles_Entitlements"
+                  ],
+                  "OutputVarName": "Role",
+                  "Decision": "[[Roles_takeDecisionCreate]]",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role details",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Role"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Assign role to the user",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "POST",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {
+                        "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+                        "roleDefinitionId": "{{value}}",
+                        "principalId": "{{user_id}}",
+                        "directoryScopeId": "/"
+                      },
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "ModificationUserInfo": {
+          "ModificationUserData": [
+            {
+              "Action_type": "modify_user",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Generate access token for O365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Fetch user details based on email",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[userapiendpoint]]/[username]",
+                  "ExtractVariable": "",
+                  "Parameters": "",
+                  "APIMethod": "PATCH",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}",
+                    "Content-Type": "application/json"
+                  },
+                  "RequestBody": {
+                    "givenname": "[[givenname]]",
+                    "surname": "[[surname]]",
+                    "jobTitle": "[[jobtitle]]",
+                    "department": "[[department]]",
+                    "mobilePhone": "[[mobilephone]]",
+                    "streetAddress": "[[streetaddress]]",
+                    "city": "[[city]]",
+                    "state": "[[state]]",
+                    "country": "[[country]]"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                }
+              ]
+            }
+          ]
+        },
+        "ModificationEntitlementInfo": {
+          "ModificationEntitlementData": [
+            {
+              "Action_type": "modify_entitlement",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Generate access token for O365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Fetch user details based on email",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "user_id",
+                  "EndPoint": "https://graph.microsoft.com/v1.0/users/[username]",
+                  "ExtractVariable": "id",
+                  "Parameters": "",
+                  "APIMethod": "GET",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}"
+                  },
+                  "RequestBody": {},
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each group to fetch details",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Groups_CreateEntitlement"
+                  ],
+                  "OutputVarName": "Group",
+                  "Decision": "[[Groups_takeDecisionCreate]]",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract group details",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Group"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Add user to group",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[groupendpoint]]/{{value}}/members/$ref",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "POST",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {
+                        "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{{user_id}}"
+                      },
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "4",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each group to delete entitlement",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Groups_DeleteEntitlement"
+                  ],
+                  "OutputVarName": "Group",
+                  "Decision": "[[Groups_takeDecisionDelete]]",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract group details",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Group"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Remove user from group",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[groupendpoint]]/{{value}}/members/{{user_id}}/$ref",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "DELETE",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {},
+                      "LoopRequired": "False",
+                      "InputDType": "",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each role to fetch details",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Roles_CreateEntitlement"
+                  ],
+                  "Decision": "[[Roles_takeDecisionCreate]]",
+                  "OutputVarName": "Role",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role details to add user",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Role"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Assign role to user",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "POST",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {
+                        "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+                        "roleDefinitionId": "{{value}}",
+                        "principalId": "{{user_id}}",
+                        "directoryScopeId": "/"
+                      },
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each role to delete entitlement",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Roles_DeleteEntitlement"
+                  ],
+                  "Decision": "[[Roles_takeDecisionDelete]]",
+                  "OutputVarName": "Role",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role details to remove user",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Role"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Fetch role assignment ID for user",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "RoleData",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments?$filter=principalId eq '{{user_id}}' and roleDefinitionId eq '{{value}}'",
+                      "ExtractVariable": "value",
+                      "Parameters": "",
+                      "APIMethod": "GET",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {},
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "Loop",
+                      "Description": "Loop on each role assignment to delete",
+                      "LoopAction": "Default",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [],
+                      "OutputVarName": "id",
+                      "EndPoint": "",
+                      "APIMethod": "",
+                      "OutputDType": "list",
+                      "RequestBody": "",
+                      "LoopRequired": false,
+                      "SaveFromEachLoop": "id",
+                      "LoopOn": "RoleData",
+                      "InputRequired": [
+                        "RoleData"
+                      ]
+                    },
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role assignment ID",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "RoleData"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "id"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Remove role assignment from user",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments/{{id}}",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "DELETE",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {},
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        "DeprovisioningInfo": {
+          "DeprovisioningData": [
+            {
+              "Action_type": "delete_user",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Fetch access token for o365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Delete user from O365 using Graph API",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "https://graph.microsoft.com/v1.0/users/[username]",
+                  "ExtractVariable": "",
+                  "Parameters": "",
+                  "APIMethod": "DELETE",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}"
+                  },
+                  "RequestBody": {},
+                  "LoopRequired": "False",
+                  "InputDType": "",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                }
+              ]
+            }
+          ]
+        },
+        "DisableInfo": {
+          "DisableData": [
+            {
+              "Action_type": "disable_user",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Fetch access token for o365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Disable user in O365 using Graph API",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "https://graph.microsoft.com/v1.0/users/[username]",
+                  "ExtractVariable": "",
+                  "Parameters": "",
+                  "APIMethod": "PATCH",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}",
+                    "Content-Type": "application/json"
+                  },
+                  "RequestBody": {
+                    "accountEnabled": false
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                }
+              ]
+            }
+          ]
+        },
+        "ReactivationInfo": {
+          "ReactivationData": [
+            {
+              "Action_type": "reactive_user",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Fetch access token for o365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Reactivate user in O365 using Graph API",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "https://graph.microsoft.com/v1.0/users/[username]",
+                  "ExtractVariable": "",
+                  "Parameters": "",
+                  "APIMethod": "PATCH",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}",
+                    "Content-Type": "application/json"
+                  },
+                  "RequestBody": {
+                    "accountEnabled": true
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                }
+              ]
+            }
+          ]
+        },
+        "ReactivationWithModificationInfo": {
+          "ReactivationWithModificationData": [
+            {
+              "Action_type": "reactive_modify_user",
+              "App_Name": "Microsoft O365",
+              "Credentials": {},
+              "App_URL": "",
+              "App_Token_URL": "",
+              "App_ID": "",
+              "App_Secret": "",
+              "Redirect_URI": "",
+              "Result_File_Name": "",
+              "Result_API_URL": "",
+              "steps": [
+                {
+                  "Step_Count": "1",
+                  "Action": "APICall",
+                  "Description": "Fetch access token for o365 API call",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "[[accesstokenendpoint]]",
+                  "ExtractVariable": "access_token",
+                  "Parameters": "",
+                  "APIMethod": "POST",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                  },
+                  "RequestBody": {
+                    "client_id": "[[clientid]]",
+                    "scope": "https://graph.microsoft.com/.default",
+                    "client_secret": "[[clientsecret]]",
+                    "grant_type": "client_credentials"
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "x-www-form-urlencoded",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Reactivate and modify user in O365 using Graph API",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "access_token",
+                  "EndPoint": "https://graph.microsoft.com/v1.0/users/[username]",
+                  "ExtractVariable": "",
+                  "Parameters": "",
+                  "APIMethod": "PATCH",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}",
+                    "Content-Type": "application/json"
+                  },
+                  "RequestBody": {
+                    "accountEnabled": true
+                  },
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "2",
+                  "Action": "APICall",
+                  "Description": "Delete user from O365 using Graph API",
+                  "IsFinalStep": false,
+                  "OutputLinksTo": [
+                    3
+                  ],
+                  "UseTokenURL": false,
+                  "OutputVarName": "user_id",
+                  "EndPoint": "https://graph.microsoft.com/v1.0/users/[username]",
+                  "ExtractVariable": "id",
+                  "Parameters": "",
+                  "APIMethod": "GET",
+                  "OutputDType": "",
+                  "Headers": {
+                    "Authorization": "Bearer {{access_token}}"
+                  },
+                  "RequestBody": {},
+                  "LoopRequired": "False",
+                  "InputDType": "json",
+                  "SaveFromEachLoop": "",
+                  "LoopOn": "data",
+                  "InputRequired": ""
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each group to create entitlement",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Groups_CreateEntitlement"
+                  ],
+                  "OutputVarName": "Group",
+                  "Decision": "[[Groups_takeDecisionCreate]]",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract group details to create entitlement",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Group"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Create group entitlement in O365 using Graph API",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[groupendpoint]]/{{value}}/members/$ref",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "POST",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {
+                        "@odata.id": "https://graph.microsoft.com/v1.0/directoryObjects/{{user_id}}"
+                      },
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "4",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each group to delete entitlement",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Groups_DeleteEntitlement"
+                  ],
+                  "OutputVarName": "Group",
+                  "Decision": "[[Groups_takeDecisionDelete]]",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract group details to delete entitlement",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Group"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Delete group entitlement in O365 using Graph API",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[groupendpoint]]/{{value}}/members/{{user_id}}/$ref",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "DELETE",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {},
+                      "LoopRequired": "False",
+                      "InputDType": "",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each role to create entitlement",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Roles_CreateEntitlement"
+                  ],
+                  "Decision": "[[Roles_takeDecisionCreate]]",
+                  "OutputVarName": "Role",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role details to create entitlement",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Role"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Create role entitlement in O365 using Graph API",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "POST",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {
+                        "@odata.type": "#microsoft.graph.unifiedRoleAssignment",
+                        "roleDefinitionId": "{{value}}",
+                        "principalId": "{{user_id}}",
+                        "directoryScopeId": "/"
+                      },
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                },
+                {
+                  "Step_Count": "3",
+                  "Action": "LoopOnStep",
+                  "Description": "Loop on each role to delete entitlement",
+                  "InputRequired": "",
+                  "InputDType": "list",
+                  "LoopOn": "",
+                  "LoopOnList": "",
+                  "ListLoop": [
+                    "Roles_DeleteEntitlement"
+                  ],
+                  "Decision": "[[Roles_takeDecisionDelete]]",
+                  "OutputVarName": "Role",
+                  "GotoStep": "",
+                  "LoopStep": [
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role details to delete entitlement",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "Role"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "value"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Delete role entitlement in O365 using Graph API",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "RoleData",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments?$filter=principalId eq '{{user_id}}' and roleDefinitionId eq '{{value}}'",
+                      "ExtractVariable": "value",
+                      "Parameters": "",
+                      "APIMethod": "GET",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {},
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "Loop",
+                      "Description": "Loop on each role assignment to delete",
+                      "LoopAction": "Default",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [],
+                      "OutputVarName": "id",
+                      "EndPoint": "",
+                      "APIMethod": "",
+                      "OutputDType": "list",
+                      "RequestBody": "",
+                      "LoopRequired": false,
+                      "SaveFromEachLoop": "id",
+                      "LoopOn": "RoleData",
+                      "InputRequired": [
+                        "RoleData"
+                      ]
+                    },
+                    {
+                      "Step_Count": "1",
+                      "Action": "Extract",
+                      "Description": "Extract role assignment id to delete entitlement",
+                      "SubAction": "",
+                      "InputRequired": [
+                        "RoleData"
+                      ],
+                      "SourceEntity": "",
+                      "OutputVarName": "",
+                      "Keys": [
+                        "id"
+                      ]
+                    },
+                    {
+                      "Step_Count": "2",
+                      "Action": "APICall",
+                      "Description": "Delete role entitlement in O365 using Graph API",
+                      "IsFinalStep": false,
+                      "OutputLinksTo": [
+                        3
+                      ],
+                      "UseTokenURL": false,
+                      "OutputVarName": "",
+                      "EndPoint": "[[rolemanagementendpoint]]/directory/roleAssignments/{{id}}",
+                      "ExtractVariable": "",
+                      "Parameters": "",
+                      "APIMethod": "DELETE",
+                      "OutputDType": "",
+                      "Headers": {
+                        "Content-Type": "application/json",
+                        "Authorization": "Bearer {{access_token}}"
+                      },
+                      "RequestBody": {},
+                      "LoopRequired": "False",
+                      "InputDType": "json",
+                      "SaveFromEachLoop": "",
+                      "LoopOn": "data",
+                      "InputRequired": ""
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "SCIM": {},
+      "ODBC": {},
+      "CLI": {
+        "WindowRDP": {},
+        "SSH": {},
+        "ThickClient": {}
+      }
+    }
+  },
+  "UAGInfo": {
+    "Metadata": {
+      "MethodUsed": [
+        "API"
+      ],
+      "discoveryObjects": [
+        "Groups",
+        "Roles"
+      ]
+    },
+    "SupportedReconMethod": {
+      "ArconBOT": {},
+      "API": {
+        "ReconData": [
+          {
+            "Action_type": "Recon_Partial",
+            "App_Name": "O365",
+            "Credentials": {},
+            "App_URL": "",
+            "App_Token_URL": "",
+            "FixedEndPoint": "[[getgroupendpoint]]?$top=999",
+            "DynamicEndPoint": "[[getgroupendpoint]]?$top=999",
+            "Result_File_Name": "",
+            "Result_API_URL": "",
+            "PageNumber": "1",
+            "PageSize": "999",
+            "BotStatus": {
+              "URL": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetLogStatusUpdate",
+              "RequestBody": {
+                "ProcessID": "[[Processid]]",
+                "Status": "{{Status}}",
+                "AssetId": "[[assetid]]",
+                "Message": "{{BotMessage}}",
+                "type": 0
+              },
+              "Tokenurl": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+              "defaultux": "[[WorkSpaceUsername]]",
+              "defaultuxd": "[[WorkSpacePassword]]"
+            },
+            "steps": [
+              {
+                "Step_Count": "1",
+                "Action": "APICall",
+                "Description": "Fetch access token for o365 API call",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "access_token",
+                "EndPoint": "[[accesstokenendpoint]]",
+                "ExtractVariable": "access_token",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "",
+                "Headers": {
+                  "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "RequestBody": {
+                  "client_id": "[[clientid]]",
+                  "scope": "https://graph.microsoft.com/.default",
+                  "client_secret": "[[clientsecret]]",
+                  "grant_type": "client_credentials"
+                },
+                "LoopRequired": "False",
+                "InputDType": "x-www-form-urlencoded",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "2",
+                "Action": "APICall",
+                "Description": "Fetch groups from O365 using Graph API",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "Groups_list_Response",
+                "EndPoint": "{{DynamicEndPoint}}",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "GET",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{access_token}}"
+                },
+                "RequestBody": {},
+                "LoopRequired": "False",
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "6",
+                "Action": "Extract",
+                "Description": "Extract groups and next link for pagination",
+                "SubAction": "",
+                "InputRequired": [
+                  "Groups_list_Response"
+                ],
+                "SourceEntity": "",
+                "OutputVarName": "",
+                "OutputKeyName": [
+                  "Groups_list",
+                  "DynamicEndPoint"
+                ],
+                "Keys": [
+                  "value",
+                  "@odata.nextLink"
+                ]
+              },
+              {
+                "Step_Count": "3",
+                "Action": "Loop",
+                "Description": "Loop through each group to create entitlement",
+                "LoopAction": "Mapping",
+                "IsFinalStep": false,
+                "OutputLinksTo": [],
+                "OutputVarName": "GroupsListMapped",
+                "EndPoint": "",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "",
+                "OutputDType": "list",
+                "Headers": {},
+                "RequestBody": {
+                  "id": "EntitlementSourceId",
+                  "displayName": "EntitlementName",
+                  "description": "EntitlementDescription"
+                },
+                "LoopRequired": false,
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "Groups_list",
+                "Keys": [
+                  "id",
+                  "displayName",
+                  "description"
+                ]
+              },
+              {
+                "Step_Count": "11",
+                "Action": "Loop",
+                "Description": "Concatenate all groups into a single list",
+                "LoopAction": "ConcatArray",
+                "SaveFromEachLoop": "",
+                "OutputVarName": "allGroups",
+                "LoopOn": "GroupsListMapped"
+              },
+              {
+                "Step_Count": "4",
+                "Action": "LoopOnStep",
+                "Description": "Loop on each group to create entitlement",
+                "InputRequired": "",
+                "LoopOn": "Groups_list",
+                "InputDType": "",
+                "OutputVarName": "Groups_list_Data",
+                "GotoStep": "2",
+                "LoopStep": []
+              },
+              {
+                "Step_Count": "4",
+                "Action": "APICall",
+                "Description": "Fetch access token for WebSM API call",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "WebSMaccessToken",
+                "EndPoint": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+                "ExtractVariable": "accessToken",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "list",
+                "Headers": {
+                  "Content-Type": "application/json"
+                },
+                "RequestBody": {
+                  "username": "[[WorkSpaceUsername]]",
+                  "userARCXWD": "[[WorkSpacePassword]]"
+                },
+                "LoopRequired": "False",
+                "InputDType": "json",
+                "SaveFromEachLoop": "",
+                "LoopOn": "",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "5",
+                "Action": "APICall",
+                "Description": "Create group entitlements in WebSM",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "",
+                "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetEntitlements",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{WebSMaccessToken}}"
+                },
+                "RequestBody": {
+                  "Assetid": "[[assetid]]",
+                  "Entitlement": "{{allGroups}}",
+                  "ProcessId": "[[Processid]]",
+                  "EntityName": "Groups"
+                },
+                "LoopRequired": "False",
+                "InputDType": "json",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "2",
+                "Action": "APICall",
+                "Description": "Fetch roles from O365 using Graph API",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "Roles_list_Response",
+                "EndPoint": "[[rolemanagementendpoint]]/directory/roleDefinitions",
+                "ExtractVariable": "value",
+                "Parameters": "",
+                "APIMethod": "GET",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{access_token}}"
+                },
+                "RequestBody": {},
+                "LoopRequired": "False",
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "3",
+                "Action": "Loop",
+                "Description": "Loop through each role to create entitlement",
+                "LoopAction": "Mapping",
+                "IsFinalStep": false,
+                "OutputLinksTo": [],
+                "OutputVarName": "RolesList",
+                "EndPoint": "",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "",
+                "OutputDType": "list",
+                "Headers": {},
+                "RequestBody": {
+                  "id": "EntitlementSourceId",
+                  "displayName": "EntitlementName",
+                  "description": "EntitlementDescription"
+                },
+                "LoopRequired": false,
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "Roles_list_Response",
+                "Keys": [
+                  "id",
+                  "displayName",
+                  "description"
+                ]
+              },
+              {
+                "Step_Count": "5",
+                "Action": "APICall",
+                "Description": "Create role entitlements in WebSM",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "",
+                "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetEntitlements",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{WebSMaccessToken}}"
+                },
+                "RequestBody": {
+                  "Assetid": "[[assetid]]",
+                  "Entitlement": "{{RolesList}}",
+                  "ProcessId": "[[Processid]]",
+                  "EntityName": "Roles"
+                },
+                "LoopRequired": "False",
+                "InputDType": "json",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              }
+            ]
+          },
+          {
+            "Action_type": "Recon_User",
+            "App_Name": "O365",
+            "Credentials": {},
+            "App_URL": "",
+            "App_Token_URL": "",
+            "FixedEndPoint": "[[usersendpoint]]?$top=999&$filter=accountEnabled eq true",
+            "DynamicEndPoint": "[[usersendpoint]]?$top=999&$filter=accountEnabled eq true",
+            "Result_File_Name": "",
+            "Result_API_URL": "",
+            "PageNumber": "1",
+            "PageSize": "999",
+            "BotStatus": {
+              "URL": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconAssetLogStatusUpdate",
+              "RequestBody": {
+                "ProcessID": "[[Processid]]",
+                "Status": "{{Status}}",
+                "Message": "{{BotMessage}}",
+                "type": 1
+              },
+              "Tokenurl": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+              "defaultux": "[[WorkSpaceUsername]]",
+              "defaultuxd": "[[WorkSpacePassword]]"
+            },
+            "steps": [
+              {
+                "Step_Count": "1",
+                "Action": "APICall",
+                "Description": "Fetch access token for o365 API call",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "access_token",
+                "EndPoint": "[[accesstokenendpoint]]",
+                "ExtractVariable": "access_token",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "",
+                "Headers": {
+                  "Content-Type": "application/x-www-form-urlencoded"
+                },
+                "RequestBody": {
+                  "client_id": "[[clientid]]",
+                  "scope": "https://graph.microsoft.com/.default",
+                  "client_secret": "[[clientsecret]]",
+                  "grant_type": "client_credentials"
+                },
+                "LoopRequired": "False",
+                "InputDType": "x-www-form-urlencoded",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "2",
+                "Action": "APICall",
+                "Description": "Fetch users from O365 using Graph API",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "users_details",
+                "EndPoint": "{{DynamicEndPoint}}",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "GET",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{access_token}}"
+                },
+                "RequestBody": {},
+                "LoopRequired": "False",
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "6",
+                "Action": "Extract",
+                "Description": "Extract users and next link for pagination",
+                "SubAction": "",
+                "InputRequired": [
+                  "users_details"
+                ],
+                "SourceEntity": "",
+                "OutputVarName": "",
+                "OutputKeyName": [
+                  "value",
+                  "DynamicEndPoint"
+                ],
+                "Keys": [
+                  "value",
+                  "@odata.nextLink"
+                ]
+              },
+              {
+                "Step_Count": "3",
+                "Action": "APICall",
+                "Description": "Fetch access token for WebSM API call",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "WebSMaccessToken",
+                "EndPoint": "[[WorkSpaceEndPoint]]/xauth/api/Token/GenerateJwtTokenApplication",
+                "ExtractVariable": "accessToken",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "list",
+                "Headers": {
+                  "Content-Type": "application/json"
+                },
+                "RequestBody": {
+                  "username": "[[WorkSpaceUsername]]",
+                  "userARCXWD": "[[WorkSpacePassword]]"
+                },
+                "LoopRequired": "False",
+                "InputDType": "json",
+                "SaveFromEachLoop": "",
+                "LoopOn": "",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "4",
+                "Action": "LoopOnStep",
+                "Description": "Loop on each user to fetch groups and roles for entitlement",
+                "InputRequired": "",
+                "LoopOn": "value",
+                "InputDType": "",
+                "OutputVarName": "user_detail",
+                "GotoStep": "1",
+                "LoopStep": [
+                  {
+                    "Step_Count": "1",
+                    "Action": "Extract",
+                    "Description": "Extract user details for entitlement",
+                    "SubAction": "",
+                    "InputRequired": [
+                      "user_detail"
+                    ],
+                    "SourceEntity": "",
+                    "OutputVarName": "",
+                    "Keys": [
+                      "id",
+                      "userPrincipalName",
+                      "surname",
+                      "preferredLanguage",
+                      "officeLocation",
+                      "mobilePhone",
+                      "mail",
+                      "jobTitle",
+                      "givenName",
+                      "displayName"
+                    ]
+                  },
+                  {
+                    "Step_Count": "2",
+                    "Action": "APICall",
+                    "Description": "Fetch user groups from O365 using Graph API",
+                    "IsFinalStep": false,
+                    "OutputLinksTo": [
+                      3
+                    ],
+                    "UseTokenURL": false,
+                    "OutputVarName": "user_groups",
+                    "EndPoint": "[[usersendpoint]]/{{id}}/memberOf",
+                    "ExtractVariable": "value",
+                    "Parameters": "",
+                    "APIMethod": "GET",
+                    "OutputDType": "",
+                    "Headers": {
+                      "Authorization": "Bearer {{access_token}}"
+                    },
+                    "RequestBody": {},
+                    "LoopRequired": "False",
+                    "InputDType": "",
+                    "SaveFromEachLoop": "",
+                    "LoopOn": "data",
+                    "InputRequired": ""
+                  },
+                  {
+                    "Step_Count": "3",
+                    "Action": "Loop",
+                    "Description": "Loop through each group to create entitlement",
+                    "LoopAction": "ReturnList",
+                    "IsFinalStep": false,
+                    "OutputLinksTo": [],
+                    "OutputVarName": "Groups",
+                    "EndPoint": "",
+                    "ExtractVariable": "id",
+                    "Parameters": "",
+                    "APIMethod": "",
+                    "OutputDType": "list",
+                    "Headers": {},
+                    "RequestBody": "",
+                    "LoopRequired": false,
+                    "InputDType": "",
+                    "SaveFromEachLoop": "id",
+                    "LoopOn": "user_groups",
+                    "InputRequired": [
+                      "user_groups"
+                    ]
+                  },
+                  {
+                    "Step_Count": "2",
+                    "Action": "APICall",
+                    "Description": "Fetch user roles from O365 using Graph API",
+                    "IsFinalStep": false,
+                    "OutputLinksTo": [
+                      3
+                    ],
+                    "UseTokenURL": false,
+                    "OutputVarName": "Roles_list_Response",
+                    "EndPoint": "[[rolemanagementendpoint]]?$filter=principalId eq '{{id}}'",
+                    "ExtractVariable": "value",
+                    "Parameters": "",
+                    "APIMethod": "GET",
+                    "OutputDType": "",
+                    "Headers": {
+                      "Authorization": "Bearer {{access_token}}"
+                    },
+                    "RequestBody": {},
+                    "LoopRequired": "False",
+                    "InputDType": "",
+                    "SaveFromEachLoop": "",
+                    "LoopOn": "data",
+                    "InputRequired": ""
+                  },
+                  {
+                    "Step_Count": "3",
+                    "Action": "Loop",
+                    "Description": "Loop through each role to create entitlement",
+                    "LoopAction": "ReturnList",
+                    "IsFinalStep": false,
+                    "OutputLinksTo": [],
+                    "OutputVarName": "Roles",
+                    "EndPoint": "",
+                    "ExtractVariable": "roleDefinitionId",
+                    "Parameters": "",
+                    "APIMethod": "",
+                    "OutputDType": "list",
+                    "Headers": {},
+                    "RequestBody": "",
+                    "LoopRequired": false,
+                    "InputDType": "",
+                    "SaveFromEachLoop": "roleDefinitionId",
+                    "LoopOn": "Roles_list_Response",
+                    "InputRequired": [
+                      "Roles_list_Response"
+                    ]
+                  },
+                  {
+                    "Step_Count": "6",
+                    "Action": "Merge",
+                    "Description": "Merge groups and roles into a single entitlement list",
+                    "IsFinalStep": false,
+                    "OutputVarName": "EntitlemntsList",
+                    "ExtractVariable": "",
+                    "NeverLoginTime": "",
+                    "InputRequired": [
+                      "Groups",
+                      "Roles"
+                    ]
+                  },
+                  {
+                    "Step_Count": "6",
+                    "Action": "APICall",
+                    "Description": "Create user in WebSM with entitlements",
+                    "IsFinalStep": false,
+                    "OutputLinksTo": [
+                      3
+                    ],
+                    "UseTokenURL": false,
+                    "OutputVarName": "WebSMResponse",
+                    "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconDI",
+                    "ExtractVariable": "Result",
+                    "Parameters": "",
+                    "APIMethod": "POST",
+                    "OutputDType": "",
+                    "Headers": {
+                      "Authorization": "Bearer {{WebSMaccessToken}}"
+                    },
+                    "RequestBody": {
+                      "ProcessID": "[[Processid]]",
+                      "AssetId": "[[assetid]]",
+                      "username": "{{userPrincipalName}}",
+                      "password": "",
+                      "SignUp": [
+                        {
+                          "Keyname": "id",
+                          "value": "{{id}}"
+                        },
+                        {
+                          "Keyname": "username",
+                          "value": "{{userPrincipalName}}"
+                        },
+                        {
+                          "Keyname": "name",
+                          "value": "{{displayName}}"
+                        },
+                        {
+                          "Keyname": "firstname",
+                          "value": "{{givenName}}"
+                        },
+                        {
+                          "Keyname": "surname",
+                          "value": "{{surname}}"
+                        },
+                        {
+                          "Keyname": "officeLocation",
+                          "value": "{{officeLocation}}"
+                        },
+                        {
+                          "Keyname": "mobilePhone",
+                          "value": "{{mobilePhone}}"
+                        },
+                        {
+                          "Keyname": "Email",
+                          "value": "{{userPrincipalName}}"
+                        },
+                        {
+                          "Keyname": "mail",
+                          "value": "{{mail}}"
+                        },
+                        {
+                          "Keyname": "jobTitle",
+                          "value": "{{jobTitle}}"
+                        }
+                      ],
+                      "IdentityCategory": "[[IdentityCategory]]",
+                      "IdentityType": "[[IdentityType]]",
+                      "Entitlement": "{{EntitlemntsList}}",
+                      "EntitlementEntities": [
+                        {
+                          "EntityName": "Groups",
+                          "Entitlements": "{{Groups}}"
+                        },
+                        {
+                          "EntityName": "Roles",
+                          "Entitlements": "{{Roles}}"
+                        }
+                      ]
+                    },
+                    "LoopRequired": "False",
+                    "InputDType": "json",
+                    "SaveFromEachLoop": "",
+                    "LoopOn": "data",
+                    "InputRequired": ""
+                  },
+                  {
+                    "Step_Count": "7",
+                    "Action": "Extract",
+                    "Description": "Extract response from WebSM API call",
+                    "SubAction": "",
+                    "InputRequired": [
+                      "WebSMResponse"
+                    ],
+                    "SourceEntity": "",
+                    "OutputVarName": "",
+                    "Keys": [
+                      "ReturnValue",
+                      "DiplayMessage"
+                    ]
+                  }
+                ]
+              },
+              {
+                "Step_Count": "5",
+                "Action": "APICall",
+                "Description": "Fetch disabled users from O365 using Graph API",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "Disable_users_details",
+                "EndPoint": "[[usersendpoint]]?$top={{PageSize}}&$filter=accountEnabled eq false",
+                "ExtractVariable": "value",
+                "Parameters": "",
+                "APIMethod": "GET",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{access_token}}"
+                },
+                "RequestBody": {},
+                "LoopRequired": "False",
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              },
+              {
+                "Step_Count": "6",
+                "Action": "Loop",
+                "Description": "Loop through each disabled user to fetch groups and roles for entitlement",
+                "LoopAction": "Mapping",
+                "IsFinalStep": false,
+                "OutputLinksTo": [],
+                "OutputVarName": "DisableData",
+                "EndPoint": "",
+                "ExtractVariable": "",
+                "Parameters": "",
+                "APIMethod": "",
+                "OutputDType": "list",
+                "Headers": {},
+                "RequestBody": {
+                  "userPrincipalName": "UserName"
+                },
+                "LoopRequired": false,
+                "InputDType": "",
+                "SaveFromEachLoop": "",
+                "LoopOn": "Disable_users_details",
+                "Keys": [
+                  "userPrincipalName"
+                ]
+              },
+              {
+                "Step_Count": "7",
+                "Action": "APICall",
+                "Description": "Create disable user request in WebSM with entitlements",
+                "IsFinalStep": false,
+                "OutputLinksTo": [
+                  3
+                ],
+                "UseTokenURL": false,
+                "OutputVarName": "",
+                "EndPoint": "[[websmendpoint]]/smserviceapi/api/CIDigitalIdentity/ReconDIDeletion",
+                "ExtractVariable": "Result",
+                "Parameters": "",
+                "APIMethod": "POST",
+                "OutputDType": "",
+                "Headers": {
+                  "Authorization": "Bearer {{WebSMaccessToken}}"
+                },
+                "RequestBody": {
+                  "AssetId": "[[assetid]]",
+                  "ProcessID": "[[Processid]]",
+                  "DIDetails": "{{DisableData}}",
+                  "ReconDIActionType": 1
+                },
+                "LoopRequired": "False",
+                "InputDType": "json",
+                "SaveFromEachLoop": "",
+                "LoopOn": "data",
+                "InputRequired": ""
+              }
+            ]
+          }
+        ]
+      },
+      "SCIM": {},
+      "ODBC": {},
+      "CLI": {
+        "WindowRDP": {},
+        "SSH": {},
+        "ThickClient": {}
+      }
+    }
+  },
+  "VaultInfo": {
+    "SupportedVaultingMethod": {
+      "ArconBOT": {},
+      "API": {},
+      "SCIM": {},
+      "ODBC": {},
+      "CLI": {
+        "WindowRDP": {},
+        "SSH": {},
+        "ThickClient": {}
+      }
+    }
+  },
+  "FormBuilderInfo": [
+    {
+      "StepNo": "",
+      "Type": "RadioButton",
+      "Value": "",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Action to be taken on DI when user's access is removed.",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "Leaver",
+      "APIValueString": "[[Leaver]]",
+      "OptionList": "Disable::Delete",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": ""
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "RadioButton",
+      "Value": "",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Reactivation",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "isReEnabled",
+      "APIValueString": "[[isReEnabled]]",
+      "OptionList": "Yes::No",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": ""
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "https://login.microsoftonline.com/1394b365-3ebf-47e5-963e-21c6f0dd8705/oauth2/v2.0/token",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Access Token Endpoint",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "accesstokenendpoint",
+      "APIValueString": "[[accesstokenendpoint]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "https://login.microsoftonline.com/1394b365-3ebf-47e5-963e-21c6f0dd8705/oauth2/v2.0/token"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo",
+        "UAGInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "c4c59e59-ba91-4290-8152-8f6f8a397415",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Client ID",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "clientid",
+      "APIValueString": "[[clientid]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "c4c59e59-ba91-4290-8152-8f6f8a397415"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo",
+        "UAGInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "<REDACTED_CLIENT_SECRET>",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Client Secret",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "clientsecret",
+      "APIValueString": "[[clientsecret]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "<REDACTED_CLIENT_SECRET>"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo",
+        "UAGInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "https://graph.microsoft.com/v1.0/users",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "User API",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "userapiendpoint",
+      "APIValueString": "[[userapiendpoint]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "https://graph.microsoft.com/v1.0/users"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "c4c59e59-ba91-4290-8152-8f6f8a397415",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Role Management EndPoint",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "rolemanagementendpoint",
+      "APIValueString": "[[rolemanagementendpoint]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "c4c59e59-ba91-4290-8152-8f6f8a397415"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo",
+        "UAGInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "abcd xyz",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Email",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "Email",
+      "APIValueString": "[[Email]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "<REDACTED_TOKEN>"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "UniqueID",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "UniqueID",
+      "APIValueString": "[[UniqueID]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "<REDACTED_TOKEN>"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "abcd xyz",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Display Name",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "displayname",
+      "APIValueString": "[[displayname]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "<REDACTED_TOKEN>"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "abcd",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Mail NickName",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "mailnickname",
+      "APIValueString": "[[mailnickname]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "abcd"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "abcd",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Given Name",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "givenname",
+      "APIValueString": "[[givenname]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "1234"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "abc",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Surname",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "surname",
+      "APIValueString": "[[surname]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "abcd@xyz.com"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "abcd",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Job Title",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "jobtitle",
+      "APIValueString": "[[jobtitle]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "abcd"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "SDE",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Department",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "department",
+      "APIValueString": "[[department]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "SDE"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "646464641",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Mobile Phone",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "mobilephone",
+      "APIValueString": "[[mobilephone]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "646464641"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "Arcon",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Company Name",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "companyname",
+      "APIValueString": "[[companyname]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "Arcon"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "Mumbai",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Street Address",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "streetaddress",
+      "APIValueString": "[[streetaddress]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "Mumbai"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "Mumbai",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "City",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "city",
+      "APIValueString": "[[city]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "Mumbai"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "Maharashtra",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "State",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "state",
+      "APIValueString": "[[state]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "Maharashtra"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "India",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Country",
+      "AttributeType": "ApplicationAttribute",
+      "KeyName": "country",
+      "APIValueString": "[[country]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "India"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "https://graph.microsoft.com/v1.0/groups/",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Group EndPoint",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "groupendpoint",
+      "APIValueString": "[[groupendpoint]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "https://graph.microsoft.com/v1.0/groups/"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "LCMInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "c4c59e59-ba91-4290-8152-8f6f8a397415",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Users Endpoint",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "usersendpoint",
+      "APIValueString": "[[usersendpoint]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "c4c59e59-ba91-4290-8152-8f6f8a397415"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "UAGInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    },
+    {
+      "StepNo": "",
+      "Type": "TextBox",
+      "Value": "c4c59e59-ba91-4290-8152-8f6f8a397415",
+      "Name": "",
+      "Id": "",
+      "ClassName": "",
+      "XPath": "",
+      "WaitTime": 1,
+      "StepDescription": "Group EndPoint",
+      "AttributeType": "ApplicationConfiguration",
+      "KeyName": "getgroupendpoint",
+      "APIValueString": "[[getgroupendpoint]]",
+      "OptionList": "",
+      "ExtraOptions": {
+        "Label": null,
+        "Name": null,
+        "Class": null,
+        "Placeholder": null,
+        "Required": false,
+        "Type": "text",
+        "MinLength": null,
+        "MaxLength": null,
+        "CustomRegex": "",
+        "CustomError": "",
+        "AllowMultiple": false,
+        "CustomAttributes": {
+          "input": "c4c59e59-ba91-4290-8152-8f6f8a397415"
+        }
+      },
+      "SelectedOptions": [],
+      "StepIdentifier": "",
+      "UseItforCapability": [
+        "UAGInfo"
+      ],
+      "ForSupportedBotMethod": [
+        "API"
+      ]
+    }
+  ]
+}

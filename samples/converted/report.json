@@ -1,0 +1,97 @@
+{
+  "generatedUtc": "2026-11-23T12:01:34.1063984Z",
+  "converted": 2,
+  "failed": 1,
+  "inputErrors": [],
+  "files": [
+    {
+      "input": "/home/user/ConnectorMigrator/tests/ConnectorMigrator.Tests/Fixtures/AWS_v10.11.005_5.json",
+      "output": "/tmp/claude-0/-home-user/0c893b09-bf6d-5c58-8aa2-3ebec0beac50/scratchpad/out/AWS_v10.11.005_5.json",
+      "status": "Converted",
+      "error": null,
+      "warnings": [],
+      "summary": {
+        "ConnectorId": "aws",
+        "Capabilities": [
+          "DISCOVERY",
+          "LIFECYCLE",
+          "SSO"
+        ],
+        "SsoOptions": [
+          "RPA"
+        ],
+        "LcmMethodsUsed": [
+          "SDK"
+        ],
+        "LcmFeatures": [
+          "CREATE",
+          "UPDATE_ENTITLEMENT",
+          "DELETE"
+        ],
+        "UagMethodsUsed": [
+          "SDK"
+        ],
+        "DiscoveryObjects": [
+          "Groups",
+          "Policies"
+        ],
+        "FormBuilderListsRelocated": 6,
+        "FormBuilderFieldsWritten": 6
+      }
+    },
+    {
+      "input": "/home/user/ConnectorMigrator/tests/ConnectorMigrator.Tests/Fixtures/Microsoft_O365_NewStructure.json",
+      "output": null,
+      "status": "Failed",
+      "error": "File already appears to be in the new connector structure (found FormBuilderInfo, Metadata.connectorId, Metadata.capabilities, SSOInfo.Metadata, LCMInfo.Metadata, UAGInfo.Metadata).",
+      "warnings": [],
+      "summary": null
+    },
+    {
+      "input": "/home/user/ConnectorMigrator/tests/ConnectorMigrator.Tests/Fixtures/Microsoft_O365_OldStructure.json",
+      "output": "/tmp/claude-0/-home-user/0c893b09-bf6d-5c58-8aa2-3ebec0beac50/scratchpad/out/Microsoft_O365_OldStructure.json",
+      "status": "Converted",
+      "error": null,
+      "warnings": [
+        "FormBuilder field 'surname' differs between LCMInfo.SupportedLCMMethod.API.ProvisioningInfo.FormBuilderData and LCMInfo.SupportedLCMMethod.API.ModificationUserInfo.ModificationUserFormBuilderData (ExtraOptions); kept the first version.",
+        "FormBuilder field 'groupendpoint' differs between LCMInfo.SupportedLCMMethod.API.ProvisioningInfo.FormBuilderData and LCMInfo.SupportedLCMMethod.API.ModificationEntitlementInfo.ModificationEntitlementFormBuilderData (Value, StepDescription, ExtraOptions); kept the first version.",
+        "FormBuilder field 'accesstokenendpoint' differs between LCMInfo.SupportedLCMMethod.API.ProvisioningInfo.FormBuilderData and LCMInfo.SupportedLCMMethod.API.DeprovisioningInfo.DeProvisioningFormBuilderData (StepDescription); kept the first version.",
+        "FormBuilder field 'accesstokenendpoint' differs between LCMInfo.SupportedLCMMethod.API.ProvisioningInfo.FormBuilderData and LCMInfo.SupportedLCMMethod.API.DisableInfo.DisableFormBuilderData (StepDescription); kept the first version.",
+        "FormBuilder field 'accesstokenendpoint' differs between LCMInfo.SupportedLCMMethod.API.ProvisioningInfo.FormBuilderData and LCMInfo.SupportedLCMMethod.API.ReactivationInfo.ReactivationFormBuilderData (StepDescription); kept the first version.",
+        "FormBuilder field 'groupendpoint' differs between LCMInfo.SupportedLCMMethod.API.ProvisioningInfo.FormBuilderData and LCMInfo.SupportedLCMMethod.API.ReactivationWithModificationInfo.ReactivationWithModificationFormBuilderData (Value, StepDescription, ExtraOptions); kept the first version."
+      ],
+      "summary": {
+        "ConnectorId": "microsoft-o365",
+        "Capabilities": [
+          "DISCOVERY",
+          "LIFECYCLE",
+          "SSO"
+        ],
+        "SsoOptions": [
+          "RPA"
+        ],
+        "LcmMethodsUsed": [
+          "API"
+        ],
+        "LcmFeatures": [
+          "CREATE",
+          "UPDATE",
+          "UPDATE_ENTITLEMENT",
+          "DISABLE",
+          "DELETE",
+          "REACTIVATE",
+          "REACTIVATE_WITH_UPDATE"
+        ],
+        "UagMethodsUsed": [
+          "API"
+        ],
+        "DiscoveryObjects": [
+          "Groups",
+          "Roles"
+        ],
+        "FormBuilderListsRelocated": 8,
+        "FormBuilderFieldsWritten": 24
+      }
+    }
+  ]
+}
