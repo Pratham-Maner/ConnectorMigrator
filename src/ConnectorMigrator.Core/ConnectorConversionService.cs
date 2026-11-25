@@ -1,5 +1,6 @@
 using System.Text;
 using ConnectorMigrator.Core.Pipeline;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace ConnectorMigrator.Core;
 
@@ -80,6 +81,7 @@ public sealed class ConnectorConversionService(ConversionPipeline? pipeline = nu
         return new BatchResult { Files = results };
     }
 
+    //reads the text and checks the output path is safe to write.
     private FileResult ConvertOne(string input, string outDir, ConversionOptions options, ConnectorIdRegistry ids, HashSet<string> claimedOutputs)
     {
         var output = Path.Combine(outDir, Path.GetFileName(input));

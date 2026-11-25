@@ -30,6 +30,7 @@ public sealed class ConversionPipeline
         new FormBuilderRelocator(),
     ];
 
+    //hands the tree to each transformer: connector metadata, SSO metadata, LCM metadata, UAG metadata, then the FormBuilder relocator.
     public ConversionOutcome Convert(string inputJson, string sourceName, ConversionOptions? options = null, ConnectorIdRegistry? ids = null)
     {
         var validationWarnings = new List<string>();

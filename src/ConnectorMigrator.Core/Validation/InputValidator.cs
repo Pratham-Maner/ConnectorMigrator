@@ -19,7 +19,8 @@ public static class InputValidator
         (V.UagInfo, V.SupportedReconMethod),
         (V.VaultInfo, V.SupportedVaultingMethod),
     ];
-
+    
+    //turns the text into a JSON tree and rejects anything that is not an old-structure connector.
     public static JsonObject ParseAndValidate(string text, Action<string> warn)
     {
         if (string.IsNullOrWhiteSpace(text))
