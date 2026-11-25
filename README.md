@@ -75,9 +75,9 @@ dotnet test
 | `Metadata.capabilities` | `DISCOVERY` if UAGInfo recon has steps; `LIFECYCLE` if any `SupportedLCMMethod` block has steps; `VAULT` if VaultInfo has steps; `SSO` if `SSOOptions` is non-empty. Written in FRS order: DISCOVERY, LIFECYCLE, VAULT, SSO. |
 | `SSOInfo.Metadata.ApplicationUrl` | `Metadata.AssetURL`. |
 | `SSOInfo.Metadata.SSOOptions` | `ArconBOT` with steps → `RPA`; `CLI` with steps, or with at least one launcher entry (`SSH`, `App MobaXterm`, `App Xshell`, `App SecureCRT`, …) whose `Metadata` holds a configured value → `RPA`; `SAML`/`OIDC`/`OAuth` with any configured value → same name. Empty `{}` blocks are ignored. |
-| `LCMInfo.Metadata.MethodUsed` | `API` and/or `SDK` when that block holds steps. |
+| `LCMInfo.Metadata.MethodUsed` | Every method block under `SupportedLCMMethod` that holds steps (`API`, `SDK`, `LDAP`, `SSH`, `ArconBOT`, …), named as in the file, in file order. Nothing is hard-coded, so new methods are picked up automatically. |
 | `LCMInfo.Metadata.features` | Per operation container with steps: Provisioning → `CREATE`, ModificationUser → `UPDATE`, ModificationEntitlement → `UPDATE_ENTITLEMENT`, Disable → `DISABLE`, Deprovisioning → `DELETE`, Reactivation → `REACTIVATE`, ReactivationWithModification → `REACTIVATE_WITH_UPDATE`. Container names are matched case-insensitively (`ReActivationInfo` = `ReactivationInfo`). |
-| `UAGInfo.Metadata.MethodUsed` | Same API/SDK rule as LCM. |
+| `UAGInfo.Metadata.MethodUsed` | Same rule as LCM, over `SupportedReconMethod`. |
 | `UAGInfo.Metadata.discoveryObjects` | `Metadata.EntityNames` copied as-is. |
 | `FormBuilderInfo` | Every `*FormBuilderData` list under `LCMInfo` and `UAGInfo` is removed from its section and merged here, de-duplicated by `KeyName` (first occurrence wins). Each entry is unchanged except for two appended attributes: `UseItforCapability` (`LCMInfo` / `UAGInfo`) and `ForSupportedBotMethod` (the method(s) the field was found under). Both are unions over every place the field appeared. |
 
@@ -88,8 +88,6 @@ outside the scope such as `SOT` (with its own `SOTFormBuilderData`).
 
 - A FormBuilder field with the same `KeyName` has different content in different lists. The first
   version is kept and the differing properties are named.
-- A method other than API/SDK (for example `ArconBOT`) has steps. It still counts for the
-  capability, but it is not listed in `MethodUsed`.
 - An LCM container with steps has no feature mapping. It is not guessed; add it to
   `ConnectorVocabulary.LcmFeatureMap`.
 - `AssetName`, `AssetURL` or `EntityNames` is missing or empty, or a section is absent.
@@ -108,5 +106,5 @@ JSON comments and trailing commas in the input are tolerated.
 ### Changing a rule
 
 All names and mapping tables are in `src/ConnectorMigrator.Core/Mapping/ConnectorVocabulary.cs`.
-For example, to rename a feature or add a new LCM operation, edit `LcmFeatureMap`. To report
-`SCIM` in `MethodUsed`, add it to `TrackedBotMethods`.
+For example, to rename a feature or add a new LCM operation, edit `LcmFeatureMap`. `MethodUsed` needs no
+configuration: any method block with steps is listed.

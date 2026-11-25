@@ -76,9 +76,6 @@ public static class ConnectorVocabulary
     ];
     public static readonly string[] SsoOptionOrder = ["RPA", "SAML", "OIDC", "OAuth"];
 
-    // ---- Bot methods reported in MethodUsed ------------------------------------
-    public static readonly string[] TrackedBotMethods = ["API", "SDK"];
-
     // ---- LCM operation section -> feature ---------------------------------------
     /// <summary>
     /// Key = LCM operation container name, lower-cased with any trailing "info" removed

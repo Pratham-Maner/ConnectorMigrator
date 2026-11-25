@@ -6,7 +6,7 @@ using V = ConnectorMigrator.Core.Mapping.ConnectorVocabulary;
 
 namespace ConnectorMigrator.Core.Transformers;
 
-/// <summary>UAGInfo.Metadata: MethodUsed (API/SDK) and discoveryObjects (from Metadata.EntityNames).</summary>
+/// <summary>UAGInfo.Metadata: MethodUsed (every method with steps) and discoveryObjects (from Metadata.EntityNames).</summary>
 public sealed class UagMetadataTransformer : IConnectorTransformer
 {
     public string Name => "UAGInfo metadata";
@@ -16,7 +16,7 @@ public sealed class UagMetadataTransformer : IConnectorTransformer
         var uag = JsonHelpers.GetObject(ctx.Root, V.UagInfo);
         if (uag is null) return;
 
-        var methods = SectionDetector.MethodsUsed(SectionDetector.ReconMethods(ctx.Root), $"UAGInfo.{V.SupportedReconMethod}", ctx.Warn);
+        var methods = SectionDetector.MethodsUsed(SectionDetector.ReconMethods(ctx.Root));
         var objects = SectionDetector.EntityNames(ctx.Root, ctx.Warn);
         if (objects.Count == 0 && methods.Count > 0)
             ctx.Warn($"Discovery is configured but Metadata.EntityNames is empty; {V.DiscoveryObjects} will be empty.");

@@ -146,17 +146,27 @@ public class RuleTests
     }
 
     [Fact]
-    public void Untracked_method_counts_for_capability_but_not_method_used()
+    public void Any_method_with_steps_is_listed_in_method_used()
     {
         var c = MinimalConnector();
         c["LCMInfo"]!["SupportedLCMMethod"]!["ArconBOT"] = new JsonObject
         {
             ["ProvisioningInfo"] = new JsonObject { ["ProvisioningData"] = new JsonArray(new JsonObject { ["steps"] = OneStep() }) },
         };
+        c["LCMInfo"]!["SupportedLCMMethod"]!["SSH"] = new JsonObject();   // empty: not listed
+        c["LCMInfo"]!["SupportedLCMMethod"]!["LDAP"] = new JsonObject
+        {
+            ["DisableInfo"] = new JsonObject { ["DisableData"] = new JsonArray(new JsonObject { ["steps"] = OneStep() }) },
+        };
+        c["UAGInfo"]!["SupportedReconMethod"]!["SSH"] = new JsonObject
+        {
+            ["ReconData"] = new JsonArray(new JsonObject { ["steps"] = OneStep() }),
+        };
         var outcome = Run(c);
-        Assert.Equal(["LIFECYCLE"], Strings(outcome.Output["Metadata"]!["capabilities"]));
-        Assert.Empty(Strings(At(outcome.Output, "LCMInfo", "Metadata", "MethodUsed")));
-        Assert.Contains(outcome.Warnings, w => w.Contains("ArconBOT"));
+        Assert.Equal(["DISCOVERY", "LIFECYCLE"], Strings(outcome.Output["Metadata"]!["capabilities"]));
+        Assert.Equal(["ArconBOT", "LDAP"], Strings(At(outcome.Output, "LCMInfo", "Metadata", "MethodUsed")));
+        Assert.Equal(["SSH"], Strings(At(outcome.Output, "UAGInfo", "Metadata", "MethodUsed")));
+        Assert.DoesNotContain(outcome.Warnings, w => w.Contains("MethodUsed"));
     }
 
     [Fact]

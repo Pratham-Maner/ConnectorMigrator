@@ -115,7 +115,7 @@ public sealed class FormBuilderRelocator : IConnectorTransformer
                 foreach (var (key, value) in obj)
                 {
                     if (V.IsFormBuilderListKey(key))
-                        into.Add(new FoundList(obj, key, value, capability, CanonicalMethod(botMethod), path));
+                        into.Add(new FoundList(obj, key, value, capability, botMethod, path));
                     else
                         Collect(value, capability, botMethod, $"{path}.{key}", into);
                 }
@@ -125,9 +125,6 @@ public sealed class FormBuilderRelocator : IConnectorTransformer
                 break;
         }
     }
-
-    private static string CanonicalMethod(string key) =>
-        V.TrackedBotMethods.FirstOrDefault(m => string.Equals(m, key, StringComparison.OrdinalIgnoreCase)) ?? key;
 
     private static string? IdentityOf(JsonObject entry)
     {

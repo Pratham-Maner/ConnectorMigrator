@@ -55,23 +55,18 @@ public static class SectionDetector
     // ---------------------------------------------------------------- Methods (LCM / UAG)
 
     /// <summary>
-    /// Which tracked bot methods (API, SDK) under a SupportedXxxMethod container hold non-empty steps.
-    /// Other methods with steps (ArconBOT, SCIM, ...) are reported through <paramref name="warn"/>.
+    /// Every method block under a SupportedXxxMethod container (API, SDK, LDAP, SSH, ArconBOT, ...)
+    /// that holds non-empty steps, named as written in the file and in file order. Nothing is
+    /// hard-coded, so a new method is reported as soon as it has steps.
     /// </summary>
-    public static IReadOnlyList<string> MethodsUsed(JsonObject? supportedMethods, string sectionLabel, Action<string>? warn = null)
+    public static IReadOnlyList<string> MethodsUsed(JsonObject? supportedMethods)
     {
         if (supportedMethods is null) return [];
         var used = new List<string>();
-        foreach (var method in V.TrackedBotMethods)
-        {
-            if (JsonHelpers.TryGetProperty(supportedMethods, method, out _, out var block) && StepInspector.HasNonEmptySteps(block))
-                used.Add(method);
-        }
         foreach (var (key, block) in supportedMethods)
         {
-            if (V.TrackedBotMethods.Contains(key, StringComparer.OrdinalIgnoreCase)) continue;
-            if (StepInspector.HasNonEmptySteps(block))
-                warn?.Invoke($"{sectionLabel}.{key} has steps, but {V.MethodUsed} only reports {string.Join("/", V.TrackedBotMethods)}; '{key}' was not listed.");
+            if (StepInspector.HasNonEmptySteps(block) && !used.Contains(key, StringComparer.OrdinalIgnoreCase))
+                used.Add(key);
         }
         return used;
     }
