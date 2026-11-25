@@ -72,7 +72,7 @@ dotnet test
 | New field | Rule |
 |---|---|
 | `Metadata.connectorId` | Slug of `AssetName`, made unique within the batch (`-2`, `-3`…). Falls back to the file name if `AssetName` is empty. `--id-mode guid` gives a random GUID instead. |
-| `Metadata.capabilities` | `DISCOVERY` if UAGInfo recon has steps; `LIFECYCLE` if any `SupportedLCMMethod` block has steps; `VAULT` if VaultInfo has steps; `SSO` if `SSOOptions` is non-empty. Written in FRS order: DISCOVERY, LIFECYCLE, VAULT, SSO. |
+| `Metadata.capabilities` | `DISCOVERY` if UAGInfo recon has steps; `LIFECYCLE` if any `SupportedLCMMethod` block has steps; `VAULT` if VaultInfo has steps or any configured value (for example `CLI.ServiceType: [49]`; empty `{}` blocks, empty lists and FormBuilder lists do not count); `SSO` if `SSOOptions` is non-empty. Written in FRS order: DISCOVERY, LIFECYCLE, VAULT, SSO. |
 | `SSOInfo.Metadata.ApplicationUrl` | `Metadata.AssetURL`. |
 | `SSOInfo.Metadata.SSOOptions` | `ArconBOT` with steps → `RPA`; `CLI` with steps, or with at least one launcher entry (`SSH`, `App MobaXterm`, `App Xshell`, `App SecureCRT`, …) whose `Metadata` holds a configured value → `RPA`; `SAML`/`OIDC`/`OAuth` with any configured value → same name. Empty `{}` blocks are ignored. |
 | `LCMInfo.Metadata.MethodUsed` | Every method block under `SupportedLCMMethod` that holds steps (`API`, `SDK`, `LDAP`, `SSH`, `ArconBOT`, …), named as in the file, in file order. Nothing is hard-coded, so new methods are picked up automatically. |

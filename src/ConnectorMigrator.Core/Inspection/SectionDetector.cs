@@ -148,12 +148,27 @@ public static class SectionDetector
 
     // ---------------------------------------------------------------- Capabilities
 
+    /// <summary>
+    /// Vault is configured when SupportedVaultingMethod holds non-empty steps or any configured
+    /// value, e.g. <c>"CLI": { "ServiceType": [49] }</c>. Empty <c>{}</c> blocks, empty lists and
+    /// FormBuilder lists do not count.
+    /// </summary>
+    public static bool VaultConfigured(JsonObject? vaultMethods) =>
+        StepInspector.HasNonEmptySteps(vaultMethods) || HasConfiguredValue(vaultMethods);
+
+    private static bool HasConfiguredValue(JsonNode? node) => node switch
+    {
+        JsonObject o => o.Any(p => !V.IsFormBuilderListKey(p.Key) && HasConfiguredValue(p.Value)),
+        JsonArray a => a.Any(HasConfiguredValue),
+        _ => JsonHelpers.HasMeaningfulContent(node),
+    };
+
     public static IReadOnlyList<string> Capabilities(JsonObject root, Action<string>? warn = null)
     {
         var caps = new HashSet<string>(StringComparer.Ordinal);
         if (StepInspector.HasNonEmptySteps(ReconMethods(root))) caps.Add(V.CapDiscovery);
         if (StepInspector.HasNonEmptySteps(LcmMethods(root))) caps.Add(V.CapLifecycle);
-        if (StepInspector.HasNonEmptySteps(VaultMethods(root))) caps.Add(V.CapVault);
+        if (VaultConfigured(VaultMethods(root))) caps.Add(V.CapVault);
         if (SsoOptions(root, warn).Count > 0) caps.Add(V.CapSso);
         return V.CapabilityOrder.Where(caps.Contains).ToList();
     }

@@ -170,6 +170,23 @@ public class RuleTests
     }
 
     [Fact]
+    public void Vault_with_cli_service_type_counts_as_capability()
+    {
+        var c = MinimalConnector();
+        c["VaultInfo"]!["SupportedVaultingMethod"]!["CLI"] = new JsonObject
+        {
+            ["WindowRDP"] = new JsonObject(),
+            ["SSH"] = new JsonObject(),
+            ["ServiceType"] = new JsonArray(),                           // empty: not configured
+            ["VaultFormBuilderData"] = new JsonArray(FormField("key")),  // form fields alone do not count
+        };
+        Assert.Empty(Strings(Run(c).Output["Metadata"]!["capabilities"]));
+
+        c["VaultInfo"]!["SupportedVaultingMethod"]!["CLI"]!["ServiceType"] = new JsonArray(49);
+        Assert.Equal(["VAULT"], Strings(Run(c).Output["Metadata"]!["capabilities"]));
+    }
+
+    [Fact]
     public void Vault_and_discovery_capabilities()
     {
         var c = MinimalConnector();
