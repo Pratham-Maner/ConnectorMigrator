@@ -51,17 +51,28 @@ public static class ConnectorVocabulary
     public static readonly string[] CapabilityOrder = [CapDiscovery, CapLifecycle, CapVault, CapSso];
 
     // ---- SSO method block -> SSO option ---------------------------------------
-    /// <summary>
-    /// Key = method block under SupportedSSOMethod. StepBased = true means the block
-    /// counts only if it holds non-empty steps (bot/RPA); otherwise any configured value counts.
-    /// </summary>
-    public static readonly IReadOnlyList<(string MethodKey, string Option, bool StepBased)> SsoOptionMap =
+    /// <summary>How an SSO method block is judged "configured".</summary>
+    public enum SsoDetection
+    {
+        /// <summary>Only non-empty steps count (browser bot / RPA).</summary>
+        Steps,
+        /// <summary>
+        /// Non-empty steps, or at least one launcher entry (e.g. "SSH", "App MobaXterm") whose
+        /// <c>Metadata</c> holds a configured value (ServiceTypeID, Port, Parameter, ...).
+        /// </summary>
+        StepsOrLauncher,
+        /// <summary>Any configured value counts (SAML/OIDC/OAuth).</summary>
+        AnyValue,
+    }
+
+    /// <summary>Key = method block under SupportedSSOMethod; Detection = how the block is judged configured.</summary>
+    public static readonly IReadOnlyList<(string MethodKey, string Option, SsoDetection Detection)> SsoOptionMap =
     [
-        ("ArconBOT", "RPA", true),
-        ("CLI", "RPA", true),
-        ("SAML", "SAML", false),
-        ("OIDC", "OIDC", false),
-        ("OAuth", "OAuth", false),
+        ("ArconBOT", "RPA", SsoDetection.Steps),
+        ("CLI", "RPA", SsoDetection.StepsOrLauncher),
+        ("SAML", "SAML", SsoDetection.AnyValue),
+        ("OIDC", "OIDC", SsoDetection.AnyValue),
+        ("OAuth", "OAuth", SsoDetection.AnyValue),
     ];
     public static readonly string[] SsoOptionOrder = ["RPA", "SAML", "OIDC", "OAuth"];
 

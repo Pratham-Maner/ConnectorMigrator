@@ -38,6 +38,26 @@ public class RuleTests
     }
 
     [Fact]
+    public void Cli_launchers_with_metadata_count_as_sso()
+    {
+        var c = MinimalConnector();
+        c["SSOInfo"]!["SupportedSSOMethod"]!["CLI"] = new JsonObject
+        {
+            ["SSH"] = new JsonObject(),                       // empty launcher: not configured
+            ["App Xshell"] = new JsonObject { ["Metadata"] = new JsonObject { ["Port"] = "", ["Parameter"] = "" } },
+        };
+        Assert.Empty(Strings(At(Run(c).Output, "SSOInfo", "Metadata", "SSOOptions")));
+
+        c["SSOInfo"]!["SupportedSSOMethod"]!["CLI"]!["App MobaXterm"] = new JsonObject
+        {
+            ["Metadata"] = new JsonObject { ["ServiceTypeID"] = 111, ["Parameter"] = "<VER>23.5</VER>", ["Port"] = "" },
+        };
+        var root = Run(c).Output;
+        Assert.Equal(["RPA"], Strings(At(root, "SSOInfo", "Metadata", "SSOOptions")));
+        Assert.Equal(["SSO"], Strings(root["Metadata"]!["capabilities"]));
+    }
+
+    [Fact]
     public void Configured_saml_oidc_oauth_become_sso_options()
     {
         var c = MinimalConnector();

@@ -15,7 +15,8 @@ public static class SectionDetector
 
     /// <summary>
     /// SSO options from the configured blocks under SSOInfo.SupportedSSOMethod.
-    /// ArconBOT/CLI give RPA when they hold non-empty steps; SAML/OIDC/OAuth count when they hold any value.
+    /// ArconBOT gives RPA when it holds non-empty steps; CLI gives RPA when it holds non-empty steps
+    /// or a configured launcher (SSH, App MobaXterm, ...); SAML/OIDC/OAuth count when they hold any value.
     /// </summary>
     public static IReadOnlyList<string> SsoOptions(JsonObject root, Action<string>? warn = null)
     {
@@ -32,11 +33,24 @@ public static class SectionDetector
                     warn?.Invoke($"SSOInfo.{V.SupportedSsoMethod}.{key} is configured but has no SSO option mapping; it was not added to {V.SsoOptions}.");
                 continue;
             }
-            var configured = rule.StepBased ? StepInspector.HasNonEmptySteps(block) : JsonHelpers.HasMeaningfulContent(block);
+            var configured = rule.Detection switch
+            {
+                V.SsoDetection.Steps => StepInspector.HasNonEmptySteps(block),
+                V.SsoDetection.StepsOrLauncher => StepInspector.HasNonEmptySteps(block) || HasConfiguredLauncher(block),
+                _ => JsonHelpers.HasMeaningfulContent(block),
+            };
             if (configured) found.Add(rule.Option);
         }
         return V.SsoOptionOrder.Where(found.Contains).ToList();
     }
+
+    /// <summary>
+    /// True if any child of a CLI block is a launcher entry (e.g. "SSH", "App MobaXterm") whose
+    /// <c>Metadata</c> object holds a configured value. Empty <c>{}</c> launchers do not count.
+    /// </summary>
+    private static bool HasConfiguredLauncher(JsonNode? block) =>
+        block is JsonObject cli && cli.Any(p =>
+            p.Value is JsonObject launcher && JsonHelpers.HasMeaningfulContent(JsonHelpers.GetObject(launcher, V.Metadata)));
 
     // ---------------------------------------------------------------- Methods (LCM / UAG)
 
